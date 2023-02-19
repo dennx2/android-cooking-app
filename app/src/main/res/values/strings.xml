@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">CookingApp</string>
+    <string name="app_name">DishCovery</string>
+    <string name="statement1">Based on your ingredients, we suggest you to make:</string>
 </resources>
