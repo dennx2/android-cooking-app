@@ -16,11 +16,11 @@
         ></androidx.constraintlayout.widget.Guideline>
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/gl_h_66sp"
+        android:id="@+id/gl_h_67sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.66"
+        app:layout_constraintGuide_percent="0.67"
         ></androidx.constraintlayout.widget.Guideline>
 
     <androidx.constraintlayout.widget.Guideline
@@ -56,7 +56,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="16sp"
-            android:text="@string/privacy_info"
+            android:text="@string/pg16_privacy_info"
             />
 
     </ScrollView>
@@ -75,10 +75,10 @@
         android:id="@+id/tv3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/about_us"
+        android:text="@string/pg16_about_us"
         app:layout_constraintTop_toBottomOf="@id/tv2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/gl_h_66sp"
+        app:layout_constraintBottom_toTopOf="@id/gl_h_67sp"
         />
 
     <TextView
@@ -86,7 +86,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Meet the Team"
-        app:layout_constraintTop_toBottomOf="@id/gl_h_66sp"
+        app:layout_constraintTop_toBottomOf="@id/gl_h_67sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toTopOf="@id/pg16_iv1"
         />
@@ -107,7 +107,7 @@
         android:id="@+id/tv5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/meet_team"
+        android:text="@string/pg16_meet_team"
         app:layout_constraintStart_toEndOf="@id/gl_v_33sp"
         app:layout_constraintTop_toBottomOf="@id/tv4"
         app:layout_constraintEnd_toEndOf="parent"
