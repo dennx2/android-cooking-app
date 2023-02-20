@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--    6 Horizontal guidelines-->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glh_10pc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.10123119"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glh_20pc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.20109439" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glh_40pc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glh_60pc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.6" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glh_70pc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.7" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glh_90pc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <!--    end of 6 Horizontal guidelines-->
+
+    <!--    4 Vertical guidelines-->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glv_5pc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".05"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glv_35pc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".35" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glv_65pc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.65" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glv_95pc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <!--    end of Vertical guidelines-->
+
+    <!--        android:background="@color/iphone_black"-->
+    <!--        android:paddingEnd="15sp"-->
+    <!--        android:gravity="bottom|end"-->
+    <!--        android:textColor="@color/white"-->
+    <!--        android:textSize="90sp"-->
+
+    <!--    preferred countries heading-->
+    <TextView
+        android:id="@+id/r2_countries_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose preferred countries."
+        app:layout_constraintTop_toBottomOf="@id/glh_10pc"
+        app:layout_constraintBottom_toTopOf="@id/glh_20pc"
+        app:layout_constraintStart_toStartOf="@id/glv_5pc"
+        app:layout_constraintEnd_toEndOf="@id/glv_95pc" />
+
+    <!--    image buttons for preferred countries-->
+    <!--    row1-->
+    <ImageButton
+        android:id="@+id/country_japan"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+        android:background="@color/white"
+        android:src="@drawable/dish_japan"
+        android:contentDescription="My Image Button"
+        app:layout_constraintTop_toBottomOf="@id/glh_20pc"
+        app:layout_constraintBottom_toTopOf="@id/glh_40pc"
+        app:layout_constraintStart_toStartOf="@id/glv_5pc"
+        app:layout_constraintEnd_toEndOf="@id/glv_35pc"/>
+
+    <ImageButton
+        android:id="@+id/country_india"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+        android:background="@color/white"
+        android:src="@drawable/dish_india"
+        android:contentDescription="My Image Button"
+        app:layout_constraintTop_toBottomOf="@id/glh_20pc"
+        app:layout_constraintBottom_toTopOf="@id/glh_40pc"
+        app:layout_constraintStart_toStartOf="@id/glv_35pc"
+        app:layout_constraintEnd_toEndOf="@id/glv_65pc"/>
+
+    <ImageButton
+        android:id="@+id/country_taiwan"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+        android:background="@color/white"
+        android:src="@drawable/dish_taiwan"
+        android:contentDescription="My Image Button"
+        app:layout_constraintTop_toBottomOf="@id/glh_20pc"
+        app:layout_constraintBottom_toTopOf="@id/glh_40pc"
+        app:layout_constraintStart_toStartOf="@id/glv_65pc"
+        app:layout_constraintEnd_toEndOf="@id/glv_95pc"/>
+
+    <!--    row2-->
+    <ImageButton
+        android:id="@+id/country_china"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="0dp"
+        android:scaleType="fitXY"
+        android:background="@color/white"
+        android:src="@drawable/dish_china"
+        android:contentDescription="My Image Button"
+        app:layout_constraintTop_toBottomOf="@id/glh_40pc"
+        app:layout_constraintBottom_toTopOf="@id/glh_60pc"
+        app:layout_constraintStart_toStartOf="@id/glv_5pc"
+        app:layout_constraintEnd_toEndOf="@id/glv_35pc"/>
+
+    <ImageButton
+        android:id="@+id/country_canada"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+        android:background="@color/white"
+        android:src="@drawable/dish_canada"
+        android:contentDescription="My Image Button"
+        app:layout_constraintTop_toBottomOf="@id/glh_40pc"
+        app:layout_constraintBottom_toTopOf="@id/glh_60pc"
+        app:layout_constraintStart_toStartOf="@id/glv_35pc"
+        app:layout_constraintEnd_toEndOf="@id/glv_65pc"/>
+
+    <ImageButton
+        android:id="@+id/country_nepal"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+        android:background="@color/white"
+        android:src="@drawable/dish_nepal"
+        android:contentDescription="My Image Button"
+        app:layout_constraintTop_toBottomOf="@id/glh_40pc"
+        app:layout_constraintBottom_toTopOf="@id/glh_60pc"
+        app:layout_constraintStart_toStartOf="@id/glv_65pc"
+        app:layout_constraintEnd_toEndOf="@id/glv_95pc"/>
+
+    <!--    preferred categories heading-->
+    <TextView
+        android:id="@+id/r4_categories_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose preferred categories."
+        app:layout_constraintTop_toBottomOf="@id/glh_60pc"
+        app:layout_constraintBottom_toTopOf="@id/glh_70pc"
+        app:layout_constraintStart_toStartOf="@id/glv_5pc"
+        app:layout_constraintEnd_toEndOf="@id/glv_95pc" />
+
+    <!--    row2-->
+    <ImageButton
+        android:id="@+id/categories_vegan"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="0dp"
+        android:scaleType="fitXY"
+        android:background="@color/white"
+        android:src="@drawable/categories_vegan"
+        android:contentDescription="My Image Button"
+        app:layout_constraintTop_toBottomOf="@id/glh_70pc"
+        app:layout_constraintBottom_toTopOf="@id/glh_90pc"
+        app:layout_constraintStart_toStartOf="@id/glv_5pc"
+        app:layout_constraintEnd_toEndOf="@id/glv_35pc"/>
+
+    <ImageButton
+        android:id="@+id/categories_veg"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+        android:background="@color/white"
+        android:src="@drawable/categories_veg"
+        android:contentDescription="My Image Button"
+        app:layout_constraintTop_toBottomOf="@id/glh_70pc"
+        app:layout_constraintBottom_toTopOf="@id/glh_90pc"
+        app:layout_constraintStart_toStartOf="@id/glv_35pc"
+        app:layout_constraintEnd_toEndOf="@id/glv_65pc"/>
+
+    <ImageButton
+        android:id="@+id/categories_nonveg"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+        android:background="@color/white"
+        android:src="@drawable/categories_nonveg"
+        android:contentDescription="My Image Button"
+        app:layout_constraintTop_toBottomOf="@id/glh_70pc"
+        app:layout_constraintBottom_toTopOf="@id/glh_90pc"
+        app:layout_constraintStart_toStartOf="@id/glv_65pc"
+        app:layout_constraintEnd_toEndOf="@id/glv_95pc" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SKIP"
+        app:cornerRadius="50dp"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/glh_90pc"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+    />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
