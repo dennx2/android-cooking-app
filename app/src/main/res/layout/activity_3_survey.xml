@@ -6,13 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <!--    6 Horizontal guidelines-->
+    <!--    Horizontal guidelines-->
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/glh_10pc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.10123119"
+        app:layout_constraintGuide_percent="0.1"
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.Guideline
@@ -20,7 +20,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.20109439" />
+        app:layout_constraintGuide_percent="0.2" />
 
     <!--    <androidx.constraintlayout.widget.Guideline-->
     <!--        android:id="@+id/glh_40pc"-->
@@ -49,9 +49,9 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.9" />
-    <!--    end of 6 Horizontal guidelines-->
+    <!--    end of Horizontal guidelines-->
 
-    <!--    4 Vertical guidelines-->
+    <!--    Vertical guidelines-->
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/glv_5pc"
         android:layout_width="wrap_content"
@@ -85,7 +85,7 @@
 
     <!--    preferred countries heading-->
     <TextView
-        android:id="@+id/r2_countries_title"
+        android:id="@+id/s1_countries_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Choose preferred countries."
@@ -236,7 +236,7 @@
 
     <!--    preferred categories heading-->
     <TextView
-        android:id="@+id/r4_categories_title"
+        android:id="@+id/s2_categories_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Choose preferred categories."
