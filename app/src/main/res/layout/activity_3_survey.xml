@@ -12,22 +12,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.1"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintGuide_percent="0.1" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/glh_20pc"
+        android:id="@+id/glh_50pc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.2" />
-
-    <!--    <androidx.constraintlayout.widget.Guideline-->
-    <!--        android:id="@+id/glh_40pc"-->
-    <!--        android:layout_width="wrap_content"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:orientation="horizontal"-->
-    <!--        app:layout_constraintGuide_percent="0.4" />-->
+        app:layout_constraintGuide_percent="0.5" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/glh_60pc"
@@ -37,18 +29,11 @@
         app:layout_constraintGuide_percent="0.6" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/glh_70pc"
+        android:id="@+id/glh_80pc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.7" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/glh_90pc"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.9" />
+        app:layout_constraintGuide_percent="0.8" />
     <!--    end of Horizontal guidelines-->
 
     <!--    Vertical guidelines-->
@@ -59,20 +44,6 @@
         android:orientation="vertical"
         app:layout_constraintGuide_percent=".05"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <!--    <androidx.constraintlayout.widget.Guideline-->
-    <!--        android:id="@+id/glv_35pc"-->
-    <!--        android:layout_width="wrap_content"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:orientation="vertical"-->
-    <!--        app:layout_constraintGuide_percent=".35" />-->
-
-    <!--    <androidx.constraintlayout.widget.Guideline-->
-    <!--        android:id="@+id/glv_65pc"-->
-    <!--        android:layout_width="wrap_content"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:orientation="vertical"-->
-    <!--        app:layout_constraintGuide_percent="0.65" />-->
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/glv_95pc"
@@ -88,21 +59,22 @@
         android:id="@+id/s1_countries_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:paddingTop="20dp"
         android:text="Choose preferred countries."
-        app:layout_constraintBottom_toTopOf="@id/glh_20pc"
+        app:layout_constraintBottom_toTopOf="@id/glh_10pc"
         app:layout_constraintEnd_toEndOf="@id/glv_95pc"
         app:layout_constraintStart_toStartOf="@id/glv_5pc"
-        app:layout_constraintTop_toBottomOf="@id/glh_10pc" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <!--    image buttons for preferred countries (nx3,scroll view)-->
 
     <ScrollView
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@id/glh_60pc"
+        app:layout_constraintBottom_toTopOf="@id/glh_50pc"
         app:layout_constraintEnd_toEndOf="@id/glv_95pc"
         app:layout_constraintStart_toStartOf="@id/glv_5pc"
-        app:layout_constraintTop_toBottomOf="@id/glh_20pc">
+        app:layout_constraintTop_toBottomOf="@id/glh_10pc">
 
 
         <GridLayout
@@ -239,20 +211,21 @@
         android:id="@+id/s2_categories_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:paddingTop="20dp"
         android:text="Choose preferred categories."
-        app:layout_constraintBottom_toTopOf="@id/glh_70pc"
+        app:layout_constraintBottom_toTopOf="@id/glh_60pc"
         app:layout_constraintEnd_toEndOf="@id/glv_95pc"
         app:layout_constraintStart_toStartOf="@id/glv_5pc"
-        app:layout_constraintTop_toBottomOf="@id/glh_60pc" />
+        app:layout_constraintTop_toBottomOf="@id/glh_50pc" />
 
     <!--    image buttons for preferred categories (nx3,scroll view)-->
     <ScrollView
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@id/glh_90pc"
+        app:layout_constraintBottom_toTopOf="@id/glh_80pc"
         app:layout_constraintEnd_toEndOf="@id/glv_95pc"
         app:layout_constraintStart_toStartOf="@id/glv_5pc"
-        app:layout_constraintTop_toBottomOf="@id/glh_70pc">
+        app:layout_constraintTop_toBottomOf="@id/glh_60pc">
 
 
         <GridLayout
@@ -341,7 +314,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/glh_90pc" />
-
+        app:layout_constraintTop_toBottomOf="@id/glh_80pc" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
