@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">CookingApp</string>
+
+<!--    drop down items (array) for the sort menu in the history page-->
+    <string-array name="my_spinner_items">
+        <item>Most Recent</item>
+        <item>Most Popular</item>
+        <item>By Price</item>
+        <item>A-Z</item>
+        <item>Z-A</item>
+    </string-array>
 </resources>
