@@ -115,7 +115,7 @@
         android:id="@+id/header_image"
         android:layout_width="0dp"
         android:layout_height="40dp"
-        android:src="@drawable/categories_fruit"
+        android:src="@drawable/icon_registration"
         app:layout_constraintEnd_toEndOf="@id/glv_95pc"
         app:layout_constraintStart_toStartOf="@id/glv_5pc"
         app:layout_constraintTop_toBottomOf="@id/glh_5pc" />
@@ -134,9 +134,10 @@
 
     <ImageView
         android:id="@+id/uname_icon"
-        android:layout_width="0dp"
-        android:layout_height="50dp"
-        android:src="@drawable/categories_fruit"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@color/dgrey"
+        android:src="@drawable/icon_username"
         app:layout_constraintBottom_toTopOf="@id/glh_40pc"
         app:layout_constraintEnd_toEndOf="@id/glv_25pc"
         app:layout_constraintStart_toStartOf="@id/glv_15pc"
@@ -150,6 +151,7 @@
         android:gravity="center_vertical"
         android:hint="Username"
         android:paddingLeft="20dp"
+        android:textSize="13dp"
         app:layout_constraintBottom_toTopOf="@id/glh_40pc"
         app:layout_constraintEnd_toEndOf="@id/glv_85pc"
         app:layout_constraintStart_toStartOf="@id/glv_25pc"
@@ -157,9 +159,9 @@
 
     <ImageView
         android:id="@+id/email_icon"
-        android:layout_width="0dp"
-        android:layout_height="50dp"
-        android:src="@drawable/categories_fruit"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/icon_email"
         app:layout_constraintBottom_toTopOf="@id/glh_50pc"
         app:layout_constraintEnd_toEndOf="@id/glv_25pc"
         app:layout_constraintStart_toStartOf="@id/glv_15pc"
@@ -173,6 +175,7 @@
         android:gravity="center_vertical"
         android:hint="Email"
         android:paddingLeft="20dp"
+        android:textSize="13dp"
         app:layout_constraintBottom_toTopOf="@id/glh_50pc"
         app:layout_constraintEnd_toEndOf="@id/glv_85pc"
         app:layout_constraintStart_toStartOf="@id/glv_25pc"
@@ -180,9 +183,9 @@
 
     <ImageView
         android:id="@+id/password_icon"
-        android:layout_width="0dp"
-        android:layout_height="50dp"
-        android:src="@drawable/categories_fruit"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/icon_password"
         app:layout_constraintBottom_toTopOf="@id/glh_60pc"
         app:layout_constraintEnd_toEndOf="@id/glv_25pc"
         app:layout_constraintStart_toStartOf="@id/glv_15pc"
@@ -196,6 +199,7 @@
         android:gravity="center_vertical"
         android:hint="Password"
         android:paddingLeft="20dp"
+        android:textSize="13dp"
         app:layout_constraintBottom_toTopOf="@id/glh_60pc"
         app:layout_constraintEnd_toEndOf="@id/glv_85pc"
         app:layout_constraintStart_toStartOf="@id/glv_25pc"
@@ -203,9 +207,9 @@
 
     <ImageView
         android:id="@+id/repassword_icon"
-        android:layout_width="0dp"
-        android:layout_height="50dp"
-        android:src="@drawable/categories_fruit"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/icon_password"
         app:layout_constraintBottom_toTopOf="@id/glh_70pc"
         app:layout_constraintEnd_toEndOf="@id/glv_25pc"
         app:layout_constraintStart_toStartOf="@id/glv_15pc"
@@ -219,6 +223,7 @@
         android:gravity="center_vertical"
         android:hint="Re-type Password"
         android:paddingLeft="20dp"
+        android:textSize="13dp"
         app:layout_constraintBottom_toTopOf="@id/glh_70pc"
         app:layout_constraintEnd_toEndOf="@id/glv_85pc"
         app:layout_constraintStart_toStartOf="@id/glv_25pc"
