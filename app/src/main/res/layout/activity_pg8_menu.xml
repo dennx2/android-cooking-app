@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="12dp"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_h_15sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15"></androidx.constraintlayout.widget.Guideline>
+
+    <Button
+        android:id="@+id/profileButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Profile"
+        android:textSize="15sp"
+        android:backgroundTint="#F0ECCF"
+        android:textColor="#808080"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@id/gl_h_15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/favoritesButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Favorites"
+        android:textSize="15sp"
+        android:backgroundTint="#F0ECCF"
+        android:textColor="#808080"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@id/profileButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/recommendationButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Recommendation"
+        android:textSize="15sp"
+        android:backgroundTint="#F0ECCF"
+        android:textColor="#808080"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@id/favoritesButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/browseAllButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Browse All"
+        android:textSize="15sp"
+        android:backgroundTint="#F0ECCF"
+        android:textColor="#808080"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@id/recommendationButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/viewHistoryButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="View History"
+        android:textSize="15sp"
+        android:backgroundTint="#F0ECCF"
+        android:textColor="#808080"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@id/browseAllButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/aboutUsButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="About Us"
+        android:textSize="15sp"
+        android:backgroundTint="#F0ECCF"
+        android:textColor="#808080"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@id/viewHistoryButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Log Out"
+        android:textSize="15sp"
+        android:backgroundTint="#F0ECCF"
+        android:textColor="#808080"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@id/aboutUsButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:backgroundTint="#F0ECCF"
+        android:textColor="#808080"
+        android:layout_marginTop="50dp"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@id/logoutButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
