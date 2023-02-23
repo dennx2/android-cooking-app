@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--    Horizontal guidelines-->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glh_5pc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glh_15pc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glh_20pc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.2" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glh_90pc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9" />
+    <!--    end of Horizontal guidelines-->
+
+    <!--    Vertical guidelines-->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glv_5pc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".05"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glv_25pc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glv_95pc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+    <!--    end of Vertical guidelines-->
+
+
+    <!--    sort section (option plus button)-->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@id/glh_15pc"
+        app:layout_constraintEnd_toEndOf="@id/glv_95pc"
+        app:layout_constraintStart_toStartOf="@id/glv_25pc"
+        app:layout_constraintTop_toBottomOf="@id/glh_5pc">
+
+        <!--        sort dropdown-->
+        <Spinner
+            android:id="@+id/sort_dropdown"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:entries="@array/my_spinner_items"
+            android:minHeight="48dp" />
+
+        <Button
+            android:id="@+id/sort_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:backgroundTint="@color/white"
+            android:text="Sort"
+            android:textColor="@color/black"
+            app:cornerRadius="50dp" />
+
+    </LinearLayout>
+
+    <!--    history recipe results (scrollview -> grid layout -> linear layout)-->
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/glh_90pc"
+        app:layout_constraintEnd_toEndOf="@id/glv_95pc"
+        app:layout_constraintStart_toStartOf="@id/glv_5pc"
+        app:layout_constraintTop_toBottomOf="@id/glh_20pc">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alignmentMode="alignMargins"
+            android:columnCount="2"
+            android:columnOrderPreserved="false">
+            <!--            android:rowCount="3"-->
+
+            <ImageButton
+                android:id="@+id/item1_image"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:background="@color/dorange"
+                android:contentDescription="image_of_item1"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/dish_japan" />
+
+            <!--            recipe details-->
+            <LinearLayout
+                android:id="@+id/item1_description"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="2"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!--                    recipe title-->
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:paddingHorizontal="5dp"
+                        android:text="Sushi"
+                        android:textStyle="bold" />
+
+                    <!--                    read full recipe button-->
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:backgroundTint="@color/dgreen"
+                        android:text="View Recipe"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <!--                recipe excerpt-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:text="This is a dummy excerpt of a recipe. It contains a couple of dots at the end like this ....." />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/item2_image"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:background="@color/dorange"
+                android:contentDescription="image_of_item2"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/dish_taiwan" />
+
+            <LinearLayout
+                android:id="@+id/item2_description"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="2"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!--                    recipe title-->
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:paddingHorizontal="5dp"
+                        android:text="Egg Soup"
+                        android:textStyle="bold" />
+
+                    <!--                    read full recipe button-->
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:backgroundTint="@color/dgreen"
+                        android:text="View Recipe"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <!--                recipe excerpt-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:text="This is a dummy excerpt of a recipe. It contains a couple of dots at the end like this ....." />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/item3_image"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:background="@color/dorange"
+                android:contentDescription="image_of_item3"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/dish_canada" />
+
+            <LinearLayout
+                android:id="@+id/item3_description"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="2"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!--                    recipe title-->
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:paddingHorizontal="5dp"
+                        android:text="Poutine"
+                        android:textStyle="bold" />
+
+                    <!--                    read full recipe button-->
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:backgroundTint="@color/dgreen"
+                        android:text="View Recipe"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <!--                recipe excerpt-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:text="This is a dummy excerpt of a recipe. It contains a couple of dots at the end like this ....." />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/item4_image"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:background="@color/dorange"
+                android:contentDescription="image_of_item4"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/categories_nonveg" />
+
+            <LinearLayout
+                android:id="@+id/item4_description"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="2"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!--                    recipe title-->
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:paddingHorizontal="5dp"
+                        android:text="Curry"
+                        android:textStyle="bold" />
+
+                    <!--                    read full recipe button-->
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:backgroundTint="@color/dgreen"
+                        android:text="View Recipe"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <!--                recipe excerpt-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:text="This is a dummy excerpt of a recipe. It contains a couple of dots at the end like this ....." />
+            </LinearLayout>
+        </GridLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
