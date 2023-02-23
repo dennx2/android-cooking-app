@@ -16,4 +16,11 @@
         <item>A-Z</item>
         <item>Z-A</item>
     </string-array>
+    <string name="dev_team">
+        Jaydenn (Ching-Ting) Chang N01511476
+        Kaiyan Chen N01489178
+        Simul Bista N01489966
+        Mira Philip N01495720
+        \nOur cooking app is dedicated to providing users with delicious and healthy recipes that are easy to follow. With a wide range of cuisines and dietary options, our app caters to all tastes and preferences. Our team of experienced chefs and nutritionists ensure that each recipe is not only tasty but also nutritious. With step-by-step instructions and helpful tips, our app makes cooking fun and accessible for everyone.
+    </string>
 </resources>
