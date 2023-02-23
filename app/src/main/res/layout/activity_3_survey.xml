@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--    Horizontal guidelines-->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glh_10pc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glh_50pc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glh_60pc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.6" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glh_80pc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8" />
+    <!--    end of Horizontal guidelines-->
+
+    <!--    Vertical guidelines-->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glv_5pc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".05"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glv_95pc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+    <!--    end of Vertical guidelines-->
+
+
+    <!--    preferred countries heading-->
+    <TextView
+        android:id="@+id/s1_countries_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:text="Choose preferred countries."
+        app:layout_constraintBottom_toTopOf="@id/glh_10pc"
+        app:layout_constraintEnd_toEndOf="@id/glv_95pc"
+        app:layout_constraintStart_toStartOf="@id/glv_5pc"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--    image buttons for preferred countries (nx3,scroll view)-->
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/glh_50pc"
+        app:layout_constraintEnd_toEndOf="@id/glv_95pc"
+        app:layout_constraintStart_toStartOf="@id/glv_5pc"
+        app:layout_constraintTop_toBottomOf="@id/glh_10pc">
+
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alignmentMode="alignMargins"
+            android:columnCount="3"
+            android:columnOrderPreserved="false">
+            <!--            android:rowCount="3"-->
+
+            <ImageButton
+                android:id="@+id/country_japan"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:background="@color/dgreen"
+                android:contentDescription="image_of_dish_from_japan"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/dish_japan" />
+
+            <ImageButton
+                android:id="@+id/country_india"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:background="@color/dgreen"
+                android:contentDescription="image_of_dish_from_india"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/dish_india" />
+
+            <ImageButton
+                android:id="@+id/country_taiwan"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:background="@color/dgreen"
+                android:contentDescription="image_of_dish_from_taiwan"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/dish_taiwan" />
+
+            <ImageButton
+                android:id="@+id/country_china"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:background="@color/dgreen"
+                android:contentDescription="image_of_dish_from_china"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/dish_china" />
+
+            <ImageButton
+                android:id="@+id/country_canada"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:background="@color/dgreen"
+                android:contentDescription="image_of_dish_from_canada"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/dish_canada" />
+
+            <ImageButton
+                android:id="@+id/country_nepal"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:background="@color/dgreen"
+                android:contentDescription="image_of_dish_from_nepal"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/dish_nepal" />
+
+            <ImageButton
+                android:id="@+id/country_italy"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:background="@color/dgreen"
+                android:contentDescription="image_of_dish_from_italy"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/dish_italy" />
+
+            <ImageButton
+                android:id="@+id/country_mexico"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:background="@color/dgreen"
+                android:contentDescription="image_of_dish_from_mexico"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/dish_mexico" />
+
+            <ImageButton
+                android:id="@+id/country_greece"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:background="@color/dgreen"
+                android:contentDescription="image_of_dish_from_greece"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/dish_greece" />
+        </GridLayout>
+
+    </ScrollView>
+
+
+    <!--    preferred categories heading-->
+    <TextView
+        android:id="@+id/s2_categories_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:text="Choose preferred categories."
+        app:layout_constraintBottom_toTopOf="@id/glh_60pc"
+        app:layout_constraintEnd_toEndOf="@id/glv_95pc"
+        app:layout_constraintStart_toStartOf="@id/glv_5pc"
+        app:layout_constraintTop_toBottomOf="@id/glh_50pc" />
+
+    <!--    image buttons for preferred categories (nx3,scroll view)-->
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/glh_80pc"
+        app:layout_constraintEnd_toEndOf="@id/glv_95pc"
+        app:layout_constraintStart_toStartOf="@id/glv_5pc"
+        app:layout_constraintTop_toBottomOf="@id/glh_60pc">
+
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alignmentMode="alignMargins"
+            android:columnCount="3"
+            android:columnOrderPreserved="false">
+
+            <ImageButton
+                android:id="@+id/categories_vegan"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:background="@color/dorange"
+                android:contentDescription="image_of_category_vegan"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/categories_vegan" />
+
+            <ImageButton
+                android:id="@+id/categories_veg"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:background="@color/dorange"
+                android:contentDescription="image_of_category_veg"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/categories_veg" />
+
+            <ImageButton
+                android:id="@+id/categories_nonveg"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:background="@color/dorange"
+                android:contentDescription="image_of_category_nonveg"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/categories_nonveg" />
+
+            <ImageButton
+                android:id="@+id/categories_gluten_free"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:background="@color/dorange"
+                android:contentDescription="image_of_category_gluten_free"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/categories_gluten_free" />
+
+            <ImageButton
+                android:id="@+id/categories_fruit"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:background="@color/dorange"
+                android:contentDescription="image_of_category_fruit"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/categories_fruit" />
+
+        </GridLayout>
+
+    </ScrollView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:text="SKIP"
+        android:textColor="@color/black"
+        app:cornerRadius="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/glh_80pc" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
