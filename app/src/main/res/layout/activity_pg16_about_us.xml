@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="12dp"
-    tools:context=".MainActivity_pg16">
+    tools:context=".MainActivity">
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/gl_h_33sp"
@@ -105,7 +105,7 @@
 
     <TextView
         android:id="@+id/tv5"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/pg16_meet_team"
         app:layout_constraintStart_toEndOf="@id/gl_v_33sp"
