@@ -35,10 +35,36 @@
     </string>
     <string name="pg9_intro">Provide up to three ingredients and we will suggest some recipes for you.</string>
     <string name="pg15_direction_detail">STEP 1 Heat grill pan over medium-high heat. \nSTEP 2 Spread 1 teaspoon Butter with Canola Oil on one side of fillets. Sprinkle with 1/4 teaspoon garlic powder and 1/4 teaspoon pepper. Place into grill pan, butter-side down. Spread with 1 teaspoon Butter with Canola Oil; sprinkle remaining garlic powder and pepper over fish. Cook 5 minutes; turn. Place lemon into grill pan, cut-side down. Continue cooking fish 5-7 minutes or until internal temperature reaches 165°F and fish flakes easily with fork.\nSTEP 3 Dollop remaining Butter with Canola Oil onto fillets; let melt. Sprinkle with chives. Serve with grilled lemon.</string>
-    <string name="pg16_privacy_info">Proin congue est quis tincidunt placerat. Aenean porttitor, tellus ac faucibus sodales, ante erat aliquet justo, luctus venenatis purus mi ut justo. Morbi dapibus aliquam purus, et dictum risus consequat in. Nam sollicitudin quis orci non condimentum. Fusce in sapien lacinia mi congue pretium eu eget nunc. Aliquam auctor lectus eros, sit amet tincidunt quam facilisis in. Etiam vestibulum nunc ac nulla dictum interdum. Aliquam id viverra diam. Phasellus justo velit, posuere quis mollis ut, elementum et tortor. Nunc ut massa sed magna venenatis vehicula quis eget sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dictum lacus ac porta porta. Suspendisse a sapien orci. Pellentesque ut ipsum vehicula est vulputate laoreet. Morbi mollis leo mauris, vitae laoreet elit luctus blandit. Praesent ac magna ut ipsum fringilla finibus.
-        Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris id arcu quis velit rhoncus ultrices vel eget leo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed at elementum dolor. Sed ultricies turpis nisi, in auctor velit accumsan non. Donec et pharetra tortor. Morbi condimentum est sit amet varius molestie. Integer et elit diam. Nullam tristique pellentesque maximus. Cras vehicula urna justo, vitae consectetur turpis consectetur in. Vivamus non dolor ut lectus commodo laoreet. Duis id scelerisque odio. Cras et nulla ligula. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer sem arcu, mollis quis neque quis, finibus fringilla sem. Morbi ipsum massa, viverra a erat eget, venenatis pretium augue. Mauris lacinia pellentesque mi, id consequat augue pretium eu. Suspendisse dictum arcu sed nibh mollis, non scelerisque ipsum blandit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam nec porta ligula, a rutrum urna. Sed sapien turpis, congue sollicitudin viverra nec, ultrices eget purus. Ut nec sem vel eros imperdiet gravida.</string>
-    <string name="pg16_about_us">Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris id arcu quis velit rhoncus ultrices vel eget leo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed at elementum dolor. Sed ultricies turpis nisi, in auctor velit accumsan non. Donec et pharetra tortor. Morbi condimentum est sit amet varius molestie. Integer et elit diam. Nullam tristique pellentesque maximus. Cras vehicula urna justo, vitae consectetur turpis consectetur in.</string>
-    <string name="pg16_meet_team">Donec et pharetra tortor. Morbi condimentum est sit amet varius molestie. Integer et elit diam. Nullam tristique pellentesque maximus. Cras vehicula urna justo, vitae consectetur turpis consectetur in.</string>
+    <string name="pg16_privacy_info">We value your privacy and are committed to protecting your personal information. This Privacy Policy describes how we collect, use, and share information when you use our Android app.
+
+Information We Collect:
+
+Personal Information: We may collect personal information such as your name, email address, and other contact information when you create an account or contact us.
+Usage Information: We may collect information about how you use our app, such as your search queries and the recipes you view and save.
+How We Use Your Information:
+
+We use your personal information to provide you with our services, to respond to your inquiries, and to communicate with you about our app and services.
+We use your usage information to improve our app and services, to personalize your experience, and to provide you with relevant content.
+How We Share Your Information:
+
+We do not share your personal information with third parties, except as required by law or with your consent.
+We may share your usage information with third-party analytics providers to help us analyze how our app is being used and to improve our services.
+Data Security:
+We take reasonable measures to protect your personal information from unauthorized access, use, and disclosure. However, please note that no transmission over the internet or electronic storage method is 100% secure.
+
+Changes to Privacy Policy:
+We may update this Privacy Policy from time to time. We will provide notice of any material changes by posting the new Privacy Policy on our website or within our app.</string>
+    <string name="pg16_about_us">Introducing our team of Dishcovery app developers, a group of highly skilled and passionate individuals dedicated to creating the ultimate culinary experience for our users.
+
+With years of experience in Android development and a deep love for food and cooking, our team brings a unique blend of technical expertise and creative flair to the table. We are committed to designing intuitive and user-friendly interfaces that allow our users to effortlessly discover new recipes, save their favorites, and share their own creations with the world.
+
+Our team's innovative spirit and attention to detail are reflected in every aspect of Dishcovery, from the sleek and modern design to the robust and reliable backend infrastructure. We take pride in delivering a seamless and enjoyable cooking experience that helps our users improve their culinary skills and explore new flavors and cuisines.
+
+Whether you are a beginner or a seasoned chef, Dishcovery has something for everyone. Join us on this exciting journey and discover the joy of cooking with our app.</string>
+    <string name="pg16_meet_team">Developers:
+Simul Bista, Jaydenn Chang, Kaiyan Chen, Mira Philip
+
+Our team consists of four talented Android developers who are passionate about creating innovative and user-friendly apps.</string>
 </resources>
 
 
