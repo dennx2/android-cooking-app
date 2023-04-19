@@ -77,6 +77,8 @@ public class Search {
         recipe.setCookTime(recipeJson.get("cook_time").toString());
         recipe.setTotalTime(recipeJson.get("total_time").toString());
         recipe.setNbServings(recipeJson.get("nb_servings").toString());
+        recipe.setCategory(recipeJson.get("category").toString());
+        recipe.setCountry(recipeJson.get("country").toString());
     }
 
 }
