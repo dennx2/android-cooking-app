@@ -68,6 +68,7 @@ public class Search {
 
 
     private static void setDataRecipeObject(Recipe recipe, JSONObject recipeJson) {
+        recipe.setId(Integer.valueOf(recipeJson.get("id").toString()));
         recipe.setUrl(recipeJson.get("url").toString());
         recipe.setName(recipeJson.get("name").toString());
         recipe.setIngredients((JSONArray) recipeJson.get("ingredients"));

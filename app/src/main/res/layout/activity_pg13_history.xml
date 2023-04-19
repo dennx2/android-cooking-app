@@ -330,6 +330,61 @@
                     android:paddingTop="10dp"
                     android:text="This is a dummy excerpt of a recipe. It contains a couple of dots at the end like this ....." />
             </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/item5_image"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:background="@color/dorange"
+                android:contentDescription="image_of_item4"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/categories_nonveg" />
+
+            <LinearLayout
+                android:id="@+id/item5_description"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="2"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!--                    recipe title-->
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:paddingHorizontal="5dp"
+                        android:text="Momo"
+                        android:textStyle="bold" />
+
+                    <!--                    read full recipe button-->
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:backgroundTint="@color/dgreen"
+                        android:text="View Recipe"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <!--                recipe excerpt-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:text="This is a dummy excerpt of a recipe. It contains a couple of dots at the end like this ....." />
+            </LinearLayout>
         </GridLayout>
     </ScrollView>
 

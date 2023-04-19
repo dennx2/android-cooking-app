@@ -40,6 +40,11 @@
         <activity
             android:name=".pg10_SearchResultActivity"
             android:label="Search Result Activity" />
+
+        <!-- for activity - pg13_HistoryActivity -->
+        <activity
+            android:name=".pg13_HistoryActivity"
+            android:label="History Activity" />
     </application>
 
 </manifest>
