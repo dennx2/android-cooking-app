@@ -40,8 +40,7 @@ public class pg09_RecommendationActivity extends AppCompatActivity {
         ArrayList<Recipe> recipeList = Search.ingredientSearch(context);
 
         // Build an explicit Intent
-        // TODO change destination class to Search Result Activity class
-        Intent i = new Intent(this, Search.class);
+        Intent i = new Intent(this, pg10_SearchResultActivity.class);
 
         // Send data along with the Intent to the destination
         i.putExtra("recipes", recipeList);
