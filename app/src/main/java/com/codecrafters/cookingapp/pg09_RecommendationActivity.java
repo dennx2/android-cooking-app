@@ -32,7 +32,9 @@ public class pg09_RecommendationActivity extends AppCompatActivity {
         ingredient2 = findViewById(R.id.tv2_2);
         ingredient3 = findViewById(R.id.tv3_2);
 
-        String searchString = ingredient1.getText().toString() + ingredient2.getText().toString() + ingredient3.getText().toString();
+        String ing1 = ingredient1.getText().toString();
+        String ing2 = ingredient2.getText().toString();
+        String ing3 = ingredient3.getText().toString();
 
         // TODO Perform search. For now I'm using existing JSON file, so the String from TExtView will not be used.
         ArrayList<Recipe> recipeList = Search.ingredientSearch(context);
@@ -43,6 +45,9 @@ public class pg09_RecommendationActivity extends AppCompatActivity {
 
         // Send data along with the Intent to the destination
         i.putExtra("recipes", recipeList);
+        i.putExtra("ingredient1", ing1);
+        i.putExtra("ingredient2", ing2);
+        i.putExtra("ingredient3", ing3);
 
         // Start the activity with the explicit intent
         if (i.resolveActivity(getPackageManager()) != null) {
