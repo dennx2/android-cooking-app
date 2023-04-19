@@ -17,6 +17,8 @@ public class pg15_RecipeDetailActivity extends AppCompatActivity {
     TextView tvTitle;
     TextView tvIngredients;
     TextView tvSteps;
+    TextView tvCategory;
+    TextView tvCountry;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,13 +34,20 @@ public class pg15_RecipeDetailActivity extends AppCompatActivity {
         String cookTime = recipe.getCookTime();
         String totalTime = recipe.getTotalTime();
         String nbServings = recipe.getNbServings();
+        String category = recipe.getCategory();
+        String country = recipe.getCountry();
 
         tvTitle = findViewById(R.id.tv_rname);
         tvIngredients = findViewById(R.id.tv_detail_ingredient);
         tvSteps = findViewById(R.id.tv_detail_direction);
+        tvCategory = findViewById(R.id.tv_categories);
+        tvCountry = findViewById(R.id.tv_countries);
+
 
         // Set the recipe content
         tvTitle.setText(name);
+        tvCategory.setText(category);
+        tvCountry.setText(country);
 
         String ingredientsText = "";
         for (String ingredient : ingredients) {
