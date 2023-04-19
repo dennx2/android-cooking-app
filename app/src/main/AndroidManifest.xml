@@ -25,6 +25,21 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+
+        <!-- for activity - pg03_SurveyActivity -->
+        <activity
+            android:name=".pg03_SurveyActivity"
+            android:label="Survey Activity" />
+
+        <!-- for activity - pg04_LandingActivity -->
+        <activity
+            android:name=".pg04_LandingActivity"
+            android:label="Landing Activity" />
+
+        <!-- for activity - pg10_SearchResultActivity -->
+        <activity
+            android:name=".pg10_SearchResultActivity"
+            android:label="Search Result Activity" />
     </application>
 
 </manifest>
