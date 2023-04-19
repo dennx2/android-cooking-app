@@ -1,6 +1,8 @@
 package com.codecrafters.cookingapp;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
@@ -13,13 +15,14 @@ import java.util.ArrayList;
 import java.util.Locale;
 
 public class pg10_SearchResultActivity extends AppCompatActivity {
-    //todo- get this from intent
+    //todo- get this from intent from Jaydenn's recommendation page
     String ing1 = "pork";
     String ing2 = "curry";
     String ing3 = "vindaloo";
     TextView searchKeywords;
     ArrayList<Recipe> filteredRecipes = new ArrayList<>();
     ImageButton imageButton;
+    private SharedPreferences sharedPreferences;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +30,7 @@ public class pg10_SearchResultActivity extends AppCompatActivity {
         setContentView(R.layout.activity_pg10_search_result);
 
         searchKeywords = findViewById(R.id.s1_search_keywords);
-        searchKeywords.setText("'" + ing1 + "', '"+ ing2 + "', '"+ ing3 + "'");
+        searchKeywords.setText("'" + ing1 + "', '" + ing2 + "', '" + ing3 + "'");
 
         // Call the search functions to get recipe data
         ArrayList<Recipe> recipes = Search.countrySearch(this);
@@ -53,6 +56,10 @@ public class pg10_SearchResultActivity extends AppCompatActivity {
     }
 
     private void updateSearchResultPage(ArrayList<Recipe> filteredRecipes) {
+
+        // Initialize shared preferences
+        sharedPreferences = getSharedPreferences("historypreferences", Context.MODE_PRIVATE);
+
         // Loop through the filteredRecipes ArrayList and update the ImageButton objects in the XML layout file
         for (int i = 0; i < filteredRecipes.size(); i++) {
             Recipe recipe = filteredRecipes.get(i);
@@ -80,16 +87,25 @@ public class pg10_SearchResultActivity extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     //pass the clicked recipe object to the detail page via intent
-//                    Intent intent = new Intent(pg10_SearchResultActivity.this, pg15_RecipeDetailActivity.class);
-//                    intent.putExtra("recipe", recipe);
-//                    Toast.makeText(pg10_SearchResultActivity.this, "Recipe selected: " + recipeName, Toast.LENGTH_LONG).show();
-//                    startActivity(intent);
+                    //to do - change destination to pg15_RecipeDetailActivity.class
+                    Intent intent = new Intent(pg10_SearchResultActivity.this, pg03_SurveyActivity.class);
+                    intent.putExtra("recipe", recipe);
+                    Toast.makeText(pg10_SearchResultActivity.this, "Recipe selected: " + recipeName, Toast.LENGTH_LONG).show();
+                    startActivity(intent);
+
+                    // Store the clicked recipe name in shared preferences;
+                    String storedRecipeNames = sharedPreferences.getString("recipeNames", ""); // Retrieve the stored recipe names
+
+                    // Append the clicked recipe name to the stored recipe names with comma separation
+                    storedRecipeNames = storedRecipeNames.isEmpty() ? recipeName : storedRecipeNames + "," + recipeName;
+
+                    SharedPreferences.Editor editor = sharedPreferences.edit();
+                    editor.putString("recipeNames", storedRecipeNames);
+                    editor.apply(); // Commit the changes to shared preferences
                 }
             });
         }
     }
-
-
 
 
 }
