@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
@@ -33,12 +34,15 @@ public class activity_pg05_signup extends AppCompatActivity {
     FirebaseUser currentUser;
     String uname;
 
+    SharedPreferences sharedPreferences;
+    boolean isFirstLogin;
+
     @Override
     public void onStart() {
         super.onStart();
         currentUser = mAuth.getCurrentUser();
-        if(currentUser != null){
-            Intent intent = new Intent(getApplicationContext(),activity_pg04_landing.class);
+        if (currentUser != null) {
+            Intent intent = new Intent(getApplicationContext(), activity_pg04_landing.class);
             startActivity(intent);
             finish();
         }
@@ -55,6 +59,13 @@ public class activity_pg05_signup extends AppCompatActivity {
         pwd2_et = findViewById(R.id.repassword_text);
         progressBar = findViewById(R.id.progressBar);
         login_et = findViewById(R.id.sign_in);
+
+        // Initialize shared preferences
+        sharedPreferences = getSharedPreferences("MyPrefs", MODE_PRIVATE);
+
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putBoolean("is_first_login", true);
+        editor.apply();
     }
 
     public void register(View view) {
@@ -65,27 +76,27 @@ public class activity_pg05_signup extends AppCompatActivity {
         pwd = pwd_et.getText().toString();
         pwd2 = pwd2_et.getText().toString();
 
-        if(TextUtils.isEmpty(uname)){
+        if (TextUtils.isEmpty(uname)) {
             Toast.makeText(activity_pg05_signup.this, "Please enter username", Toast.LENGTH_SHORT).show();
             return;
         }
 
-        if(TextUtils.isEmpty(email)){
+        if (TextUtils.isEmpty(email)) {
             Toast.makeText(activity_pg05_signup.this, "Please enter email", Toast.LENGTH_SHORT).show();
             return;
         }
 
-        if(TextUtils.isEmpty(pwd)){
+        if (TextUtils.isEmpty(pwd)) {
             Toast.makeText(activity_pg05_signup.this, "Please enter password", Toast.LENGTH_SHORT).show();
             return;
         }
 
-        if(TextUtils.isEmpty(pwd2) ){
+        if (TextUtils.isEmpty(pwd2)) {
             Toast.makeText(activity_pg05_signup.this, "Please repeat password", Toast.LENGTH_SHORT).show();
             return;
         }
 
-        if(TextUtils.isEmpty(pwd)){
+        if (TextUtils.isEmpty(pwd)) {
             Toast.makeText(activity_pg05_signup.this, "Please enter password", Toast.LENGTH_SHORT).show();
             return;
         }
@@ -111,7 +122,7 @@ public class activity_pg05_signup extends AppCompatActivity {
                                     Toast.LENGTH_SHORT).show();
 
                             //link to login page
-                            Intent intent = new Intent(getApplicationContext(),activity_pg06_login.class);
+                            Intent intent = new Intent(getApplicationContext(), activity_pg06_login.class);
                             startActivity(intent);
                             finish();
                         } else {
@@ -125,7 +136,7 @@ public class activity_pg05_signup extends AppCompatActivity {
     }
 
     public void toLogin(View view) {
-        Intent intent = new Intent(getApplicationContext(),activity_pg06_login.class);
+        Intent intent = new Intent(getApplicationContext(), activity_pg06_login.class);
         startActivity(intent);
         finish();
     }

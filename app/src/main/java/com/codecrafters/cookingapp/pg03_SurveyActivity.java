@@ -58,7 +58,7 @@ public class pg03_SurveyActivity extends AppCompatActivity {
 
     private void moveToNextPage() {
         //            passing control to the landing page i.e. activity_pg04_landing
-        Intent intent = new Intent(pg03_SurveyActivity.this, pg04_LandingActivity.class);
+        Intent intent = new Intent(pg03_SurveyActivity.this, activity_pg04_landing.class);
         startActivity(intent);
     }
 

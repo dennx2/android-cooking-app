@@ -57,5 +57,12 @@ dependencies {
     implementation 'com.google.firebase:firebase-auth:21.3.0'
     implementation 'com.google.firebase:firebase-firestore'
     implementation 'com.google.firebase:firebase-database:20.2.0'
+
+    implementation 'com.googlecode.json-simple:json-simple:1.1.1'
 }
 
+configurations.all {
+    resolutionStrategy.dependencySubstitution {
+        substitute module('org.hamcrest:hamcrest-core:1.1') with module('junit:junit:4.13.2')
+    }
+}

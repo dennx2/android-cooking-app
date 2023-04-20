@@ -59,7 +59,7 @@ public class pg15_RecipeDetailActivity extends AppCompatActivity {
         for (String step : steps) {
             stepsText += step + "\n";
         }
-        tvIngredients.setText(stepsText);
+        tvSteps.setText(stepsText);
 
 
     }

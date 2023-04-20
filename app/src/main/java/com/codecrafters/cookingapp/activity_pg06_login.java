@@ -31,16 +31,16 @@ public class activity_pg06_login extends AppCompatActivity {
     SharedPreferences sharedPreferences;
     boolean isFirstLogin;
 
-    @Override
-    public void onStart() {
-        super.onStart();
-        FirebaseUser currentUser = mAuth.getCurrentUser();
-        if (currentUser != null) {
-            Intent intent = new Intent(getApplicationContext(), activity_pg04_landing.class);
-            startActivity(intent);
-            finish();
-        }
-    }
+//    @Override
+//    public void onStart() {
+//        super.onStart();
+//        FirebaseUser currentUser = mAuth.getCurrentUser();
+//        if (currentUser != null) {
+//            Intent intent = new Intent(getApplicationContext(), activity_pg04_landing.class);
+//            startActivity(intent);
+//            finish();
+//        }
+//    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -97,7 +97,7 @@ public class activity_pg06_login extends AppCompatActivity {
                                 finish();
                             }else{
                                 //change to go to survey later
-                                Intent intent = new Intent(getApplicationContext(), pg03_survey.class);
+                                Intent intent = new Intent(getApplicationContext(), pg03_SurveyActivity.class);
                                 startActivity(intent);
                                 finish();
                             }

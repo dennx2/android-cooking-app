@@ -27,7 +27,7 @@ public class activity_pg08_menu extends AppCompatActivity {
     }
 
     public void goFavorites(View view) {
-        Intent intent = new Intent(getApplicationContext(),pg09_favouriets.class);
+        Intent intent = new Intent(getApplicationContext(),pg07_FavoritesActivity.class);
         startActivity(intent);
         finish();
     }
@@ -45,13 +45,13 @@ public class activity_pg08_menu extends AppCompatActivity {
     }
 
     public void viewHistory(View view) {
-        Intent intent = new Intent(getApplicationContext(),pg13_history.class);
+        Intent intent = new Intent(getApplicationContext(),pg13_HistoryActivity.class);
         startActivity(intent);
         finish();
     }
 
     public void aboutUs(View view) {
-        Intent intent = new Intent(getApplicationContext(),apg16_AboutUsActivity.class);
+        Intent intent = new Intent(getApplicationContext(),pg16_AboutUsActivity.class);
         startActivity(intent);
         finish();
     }

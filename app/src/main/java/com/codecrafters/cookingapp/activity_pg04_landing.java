@@ -79,13 +79,13 @@ public class activity_pg04_landing extends AppCompatActivity {
                     country = "India";
 
                     //create the recipeObject
-                    recipeObject = new Recipe(url, name, ingredients, steps, rating, prepTime, cookTime, totalTime, nbServings, category, country);
+                    recipeObject = new Recipe(0,false,url, name, ingredients, steps, rating, prepTime, cookTime, totalTime, nbServings, category, country);
 
                     //create intent
                     Intent intent = new Intent(activity_pg04_landing.this, pg15_RecipeDetailActivity.class);
 
                     // add the recipe object to the intent
-                    intent.putExtra("myObject", recipeObject);
+                    intent.putExtra("recipe", recipeObject);
                     startActivity(intent);
                 } catch (JSONException e) {
                     e.printStackTrace();
