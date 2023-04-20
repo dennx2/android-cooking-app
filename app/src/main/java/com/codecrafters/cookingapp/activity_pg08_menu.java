@@ -39,7 +39,7 @@ public class activity_pg08_menu extends AppCompatActivity {
     }
 
     public void goBrowseAll(View view) {
-        Intent intent = new Intent(getApplicationContext(),activity_pg04_landing.class);
+        Intent intent = new Intent(getApplicationContext(),pg11_FoodCategoryActivity.class);
         startActivity(intent);
         finish();
     }
