@@ -1,8 +1,10 @@
 plugins {
     id 'com.android.application'
 
+    //add the Google services plugin
     // Add the Google services Gradle plugin
     id 'com.google.gms.google-services'
+
 }
 
 android {
@@ -40,20 +42,23 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 
-    // for json parser
-    implementation 'com.googlecode.json-simple:json-simple:1.1.1'
+    //add the dependencies for the Firebase products that you want to use in your app
+    // Import the Firebase BoM
+    implementation platform('com.google.firebase:firebase-bom:31.5.0')
 
-
-    // TODO: Add the dependencies for Firebase products you want to use
-    // When using the BoM, don't specify versions in Firebase dependencies
-    // https://firebase.google.com/docs/android/setup#available-libraries
-
-    // Import the BoM for the Firebase platform
-    implementation platform('com.google.firebase:firebase-bom:31.4.0')
-
-    // Add the dependency for the Realtime Database library
     // When using the BoM, you don't specify versions in Firebase library dependencies
-    implementation 'com.google.firebase:firebase-database'
+
+    // Add the dependency for the Firebase SDK for Google Analytics
+    implementation 'com.google.firebase:firebase-analytics'
+
+    // TODO: Add the dependencies for any other Firebase products you want to use
+    // See https://firebase.google.com/docs/android/setup#available-libraries
+    // For example, add the dependencies for Firebase Authentication and Cloud Firestore
+    implementation 'com.google.firebase:firebase-auth:21.3.0'
+    implementation 'com.google.firebase:firebase-firestore'
+    implementation 'com.google.firebase:firebase-database:20.2.0'
+
+    implementation 'com.googlecode.json-simple:json-simple:1.1.1'
 }
 
 configurations.all {

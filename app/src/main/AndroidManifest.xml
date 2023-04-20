@@ -42,8 +42,9 @@
 
         <!-- for activity - pg04_LandingActivity -->
         <activity
-            android:name=".pg04_LandingActivity"
-            android:label="Landing Activity" />
+            android:name=".activity_pg04_landing"
+            android:label="Landing Activity"
+            android:exported="true"/>
 
         <activity
             android:name=".activity_pg05_signup"

@@ -62,7 +62,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAllCaps="false"
-        android:text="Filter"
+        android:text="Search"
         android:textSize="22sp"
         android:gravity="center"
         android:backgroundTint="#FFB100"
@@ -89,37 +89,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             >
-            <Button
-                android:id="@+id/btn2"
-                android:layout_width="110dp"
-                android:layout_height="wrap_content"
-                android:textAllCaps="false"
-                android:backgroundTint="#F0ECCF"
-                android:textColor="#808080"
-                android:text="Chinese X"
-                android:textStyle="bold"
-                android:gravity="center"
-                android:layout_marginStart="25dp"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                />
 
-            <Button
-                android:id="@+id/btn3"
-                android:layout_width="110dp"
-                android:layout_height="wrap_content"
-                android:textAllCaps="false"
-                android:backgroundTint="#F0ECCF"
-                android:textColor="#808080"
-                android:text="Seafood X"
-                android:textStyle="bold"
-                android:gravity="center"
-                android:layout_marginStart="10dp"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@id/btn2"
-                />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -156,7 +126,8 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toLeftOf="@+id/imageView2"
-                app:layout_constraintBottom_toTopOf="@+id/imageView3"/>
+                app:layout_constraintBottom_toTopOf="@+id/imageView3"
+                android:onClick="openRecipe"/>
 
             <ImageView
                 android:id="@+id/imageView2"
@@ -167,7 +138,8 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintLeft_toRightOf="@+id/imageView1"
-                app:layout_constraintBottom_toTopOf="@+id/imageView4"/>
+                app:layout_constraintBottom_toTopOf="@+id/imageView4"
+                android:onClick="openRecipe"/>
 
             <ImageView
                 android:id="@+id/imageView3"
@@ -178,7 +150,8 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toLeftOf="@+id/imageView4"
-                app:layout_constraintTop_toBottomOf="@+id/imageView1"/>
+                app:layout_constraintTop_toBottomOf="@+id/imageView1"
+                android:onClick="openRecipe"/>
 
             <ImageView
                 android:id="@+id/imageView4"
@@ -189,7 +162,8 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintLeft_toRightOf="@+id/imageView3"
-                app:layout_constraintTop_toBottomOf="@+id/imageView2"/>
+                app:layout_constraintTop_toBottomOf="@+id/imageView2"
+                android:onClick="openRecipe"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

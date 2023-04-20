@@ -229,6 +229,17 @@
         app:layout_constraintStart_toStartOf="@id/glv_25pc"
         app:layout_constraintTop_toBottomOf="@id/glh_60pc" />
 
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/glh_80pc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/glh_70pc"
+        />
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -239,7 +250,8 @@
         app:layout_constraintBottom_toTopOf="@id/glh_80pc"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/glh_70pc" />
+        app:layout_constraintTop_toBottomOf="@id/glh_70pc"
+        android:onClick="register"/>
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -261,7 +273,8 @@
             app:layout_constraintBottom_toTopOf="@id/glh_90pc"
             app:layout_constraintEnd_toEndOf="@id/glv_85pc"
             app:layout_constraintStart_toStartOf="@id/glv_15pc"
-            app:layout_constraintTop_toBottomOf="@id/glh_80pc" />
+            app:layout_constraintTop_toBottomOf="@id/glh_80pc"
+            android:onClick="toLogin"/>
 
         <TextView
             android:id="@+id/about"
@@ -275,7 +288,8 @@
             app:layout_constraintBottom_toTopOf="@id/glh_90pc"
             app:layout_constraintEnd_toEndOf="@id/glv_85pc"
             app:layout_constraintStart_toStartOf="@id/glv_15pc"
-            app:layout_constraintTop_toBottomOf="@id/glh_80pc" />
+            app:layout_constraintTop_toBottomOf="@id/glh_80pc"
+            android:onClick="legal"/>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

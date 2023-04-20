@@ -2,26 +2,22 @@ package com.codecrafters.cookingapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import java.util.ArrayList;
-
-//import com.google.firebase.auth.FirebaseAuth;
-//import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class activity_pg08_menu extends AppCompatActivity {
-//
-//    FirebaseAuth auth;
-//    FirebaseUser user;
+
+    FirebaseAuth auth;
+    FirebaseUser user;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pg08_menu);
-
     }
 
     public void goProfile(View view) {
@@ -31,41 +27,58 @@ public class activity_pg08_menu extends AppCompatActivity {
     }
 
     public void goFavorites(View view) {
-        Context context = getApplicationContext();
-        ArrayList<Recipe> recipeList = Search.countrySearch(context);
         Intent intent = new Intent(getApplicationContext(),pg07_FavoritesActivity.class);
-        intent.putExtra("recipes", recipeList);
         startActivity(intent);
         finish();
     }
 
     public void goRecommend(View view) {
+        Intent intent = new Intent(getApplicationContext(),pg09_RecommendationActivity.class);
+        startActivity(intent);
+        finish();
     }
 
     public void goBrowseAll(View view) {
-        Intent intent = new Intent(getApplicationContext(),pg11_FoodCategoryActivity.class);
+        Intent intent = new Intent(getApplicationContext(),activity_pg04_landing.class);
         startActivity(intent);
         finish();
     }
 
     public void viewHistory(View view) {
+        Intent intent = new Intent(getApplicationContext(),pg13_HistoryActivity.class);
+        startActivity(intent);
+        finish();
     }
 
     public void aboutUs(View view) {
+        Intent intent = new Intent(getApplicationContext(),pg16_AboutUsActivity.class);
+        startActivity(intent);
+        finish();
     }
 
     public void logout(View view) {
-//        auth = FirebaseAuth.getInstance();
-//        user = auth.getCurrentUser();
-//
-//        FirebaseAuth.getInstance().signOut();
-//
-//        if(auth.getCurrentUser() == null){
-//            System.out.println("i am log out");
-//        }
+        auth = FirebaseAuth.getInstance();
+        user = auth.getCurrentUser();
+
+        FirebaseAuth.getInstance().signOut();
+
+        if(auth.getCurrentUser() == null){
+            System.out.println("i am log out");
+        }
         Intent intent = new Intent(getApplicationContext(),activity_pg06_login.class);
         startActivity(intent);
         finish();
+    }
+
+    public void goBack(View view) {
+        // Check if there is a previous activity on the activity stack
+        if (getSupportFragmentManager().getBackStackEntryCount() > 0){
+            // If there is, pop the activity from the stack and navigate back to it
+            getSupportFragmentManager().popBackStack();
+        } else {
+            // If there isn't, call the default back button behavior
+            super.onBackPressed();
+        }
     }
 
 

@@ -31,7 +31,7 @@
         android:id="@+id/username_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Username"
+        android:text="Email"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintTop_toBottomOf="@id/gl_h_30sp"
@@ -75,6 +75,15 @@
         android:layout_marginEnd="40dp"
         android:layout_marginTop="8dp"/>
 
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/password_edittext"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
     <Button
         android:id="@+id/login_button"
         android:layout_width="0dp"
@@ -86,7 +95,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginStart="40dp"
         android:layout_marginEnd="40dp"
-        android:layout_marginTop="32dp"/>
+        android:layout_marginTop="32dp"
+        android:onClick="login"/>
 
     <Button
         android:id="@+id/signup_button"
@@ -100,6 +110,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="16dp"
+        android:onClick="toRegister"
         />
 
     <Button
@@ -112,5 +123,7 @@
         android:textStyle="bold"
         app:layout_constraintTop_toBottomOf="@+id/signup_button"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        android:onClick="forgotPassword"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
