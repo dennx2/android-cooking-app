@@ -1,13 +1,12 @@
 package com.codecrafters.cookingapp;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import com.google.firebase.database.DataSnapshot;
@@ -32,12 +31,24 @@ public class activity_pg04_landing extends AppCompatActivity {
     Float rating;
 
     Recipe recipeObject;
+    EditText searchKeyword;
+    String searchKeywordValue;
+    Button submitButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pg04_landing);
 
+        submitButton = findViewById(R.id.btn1);
+
+        submitButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Call the search() method when the submit button is clicked
+                search(view);
+            }
+        });
 
     }
 
@@ -103,16 +114,14 @@ public class activity_pg04_landing extends AppCompatActivity {
 
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu,menu);
-        return true;
+
+    public void search(View view) {
+        searchKeyword = findViewById(R.id.et1);
+        searchKeywordValue = searchKeyword.getText().toString();
+
+        Intent intent = new Intent(this, pg10_SearchResultActivity.class);
+        intent.putExtra("searchKeywordFromLanding", searchKeywordValue);
+        startActivity(intent);
     }
 
-    @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        Intent intent = new Intent(getApplicationContext(),activity_pg08_menu.class);
-        startActivity(intent);
-        return true;
-    }
 }
