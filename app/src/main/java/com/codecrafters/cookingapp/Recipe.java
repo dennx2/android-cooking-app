@@ -5,6 +5,8 @@ import java.util.List;
 
 public class Recipe implements Serializable {
 
+    private Integer id;
+    private Boolean fav;
     private String url;
     private String name;
     private List<String> ingredients;
@@ -14,12 +16,16 @@ public class Recipe implements Serializable {
     private String cookTime;
     private String totalTime;
     private String nbServings;
+    private String category;
+    private String country;
 
     public Recipe() {
 
     }
 
-    public Recipe(String url, String name, List<String> ingredients, List<String> steps, Float rating, String prepTime, String cookTime, String totalTime, String nbServings) {
+    public Recipe(Integer id,Boolean fav, String url, String name, List<String> ingredients, List<String> steps, Float rating, String prepTime, String cookTime, String totalTime, String nbServings, String category, String country) {
+        this.id = id;
+        this.fav = false;
         this.url = url;
         this.name = name;
         this.ingredients = ingredients;
@@ -29,6 +35,18 @@ public class Recipe implements Serializable {
         this.cookTime = cookTime;
         this.totalTime = totalTime;
         this.nbServings = nbServings;
+        this.category = category;
+        this.country = country;
+    }
+
+    public Integer getId() { return id;}
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public Boolean getFav() { return fav;}
+    public void setFav(Boolean fav) {
+        this.fav = fav;
     }
 
     public String getUrl() {
@@ -103,7 +121,19 @@ public class Recipe implements Serializable {
         this.nbServings = nbServings;
     }
 
+    public String getCategory() {
+        return category;
+    }
 
+    public void setCategory(String category) {
+        this.category = category;
+    }
 
+    public String getCountry() {
+        return country;
+    }
 
+    public void setCountry(String country) {
+        this.country = country;
+    }
 }
