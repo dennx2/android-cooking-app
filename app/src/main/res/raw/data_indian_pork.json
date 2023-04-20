@@ -1,6 +1,7 @@
 [
   {
     "id" : 1,
+    "fav": true,
     "url": "https://www.allrecipes.com/recipe/87434/grilled-fusion-pork-chops/",
     "name": "Grilled Fusion Pork Chops",
     "ingredients": [
@@ -27,6 +28,7 @@
   },
   {
     "id" : 2,
+    "fav": true,
     "url": "https://www.allrecipes.com/recipe/235957/mohawk-indian-corn-soup/",
     "name": "Mohawk Indian Corn Soup",
     "ingredients": [
@@ -57,6 +59,7 @@
   },
   {
     "id" : 3,
+    "fav": true,
     "url": "https://www.allrecipes.com/recipe/213255/curried-pork-chops-and-cauliflower-with-basmati-rice/",
     "name": "Curried Pork Chops and Cauliflower with Basmati Rice",
     "ingredients": [
@@ -91,6 +94,7 @@
   },
   {
     "id" : 4,
+    "fav": true,
     "url": "https://www.allrecipes.com/recipe/217331/goan-pork-vindaloo/",
     "name": "Goan Pork Vindaloo",
     "ingredients": [
@@ -127,6 +131,7 @@
   },
   {
     "id" : 5,
+    "fav": false,
     "url": "https://www.allrecipes.com/recipe/222992/indian-tacos-deluxe/",
     "name": "Indian Tacos Deluxe",
     "ingredients": [
@@ -172,6 +177,7 @@
   },
   {
     "id" : 6,
+    "fav": false,
     "url": "https://www.allrecipes.com/recipe/236773/pork-vindaloo/",
     "name": "Pork Vindaloo",
     "ingredients": [
@@ -212,6 +218,7 @@
   },
   {
     "id" : 7,
+    "fav": false,
     "url": "https://www.allrecipes.com/recipe/159874/pork-chops-with-sweet-tomato-chutney/",
     "name": "Pork Chops with Sweet Tomato Chutney",
     "ingredients": [
@@ -245,6 +252,7 @@
   },
   {
     "id" : 8,
+    "fav": false,
     "url": "https://www.allrecipes.com/recipe/142967/easy-garam-masala/",
     "name": "Easy Garam Masala",
     "ingredients": [

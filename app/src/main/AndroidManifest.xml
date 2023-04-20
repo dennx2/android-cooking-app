@@ -36,6 +36,8 @@
             android:name=".pg04_LandingActivity"
             android:label="Landing Activity" />
 
+        <!-- for activity - pg07_FavoritesActivity -->
+
         <!-- for activity - pg10_SearchResultActivity -->
         <activity
             android:name=".pg10_SearchResultActivity"
@@ -45,6 +47,11 @@
         <activity
             android:name=".pg13_HistoryActivity"
             android:label="History Activity" />
+
+        <!-- for activity - pg15_RecipeDetailActivity -->
+        <activity
+            android:name=".pg15_RecipeDetailActivity"
+            android:label="Recipe Detail Activity" />
     </application>
 
 </manifest>

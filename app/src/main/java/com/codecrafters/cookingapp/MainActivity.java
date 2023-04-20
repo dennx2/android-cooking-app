@@ -16,8 +16,12 @@ public class MainActivity extends AppCompatActivity {
 //        Intent intent = new Intent(MainActivity.this, pg03_SurveyActivity.class);
 //        startActivity(intent);
 
-//        for test purpose
-        Intent intent = new Intent(MainActivity.this,pg10_SearchResultActivity.class);
+////        for test purpose
+//        Intent intent = new Intent(MainActivity.this,pg10_SearchResultActivity.class);
+//        startActivity(intent);
+
+        //        for test purpose
+        Intent intent = new Intent(MainActivity.this,pg13_HistoryActivity.class);
         startActivity(intent);
     }
 }
