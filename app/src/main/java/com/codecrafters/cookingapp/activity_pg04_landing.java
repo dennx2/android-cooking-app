@@ -1,9 +1,12 @@
 package com.codecrafters.cookingapp;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -122,6 +125,19 @@ public class activity_pg04_landing extends AppCompatActivity {
         Intent intent = new Intent(this, pg10_SearchResultActivity.class);
         intent.putExtra("searchKeywordFromLanding", searchKeywordValue);
         startActivity(intent);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu,menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        Intent intent = new Intent(getApplicationContext(),activity_pg08_menu.class);
+        startActivity(intent);
+        return true;
     }
 
 }
