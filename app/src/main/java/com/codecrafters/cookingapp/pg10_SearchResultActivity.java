@@ -77,7 +77,6 @@ public class pg10_SearchResultActivity extends AppCompatActivity {
             ImageButton imageButton = findViewById(imageButtonId);
 
             String newButtonId = "imageButton_" + recipeName;
-//            to do - might need to change id to recipe.getId()
             int newButtonIdResId = getResources().getIdentifier(newButtonId, "id", getPackageName());
             imageButton.setId(newButtonIdResId); // Set the new id for the ImageButton to avoid conflicts
 
@@ -85,7 +84,7 @@ public class pg10_SearchResultActivity extends AppCompatActivity {
             imageButton.setContentDescription("image_of_" + recipeName);
 
             // Update the image source based on the loop index i
-            int imageResId = getResources().getIdentifier(String.valueOf("sr" + i), "drawable", getPackageName());
+            int imageResId = getResources().getIdentifier(String.valueOf("sr" + recipe.getId()), "drawable", getPackageName());
             imageButton.setImageResource(imageResId);
 
             // Set an OnClickListener for the ImageButton to handle clicks
