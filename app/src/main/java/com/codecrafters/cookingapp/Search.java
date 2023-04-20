@@ -69,6 +69,7 @@ public class Search {
 
     private static void setDataRecipeObject(Recipe recipe, JSONObject recipeJson) {
         recipe.setId(Integer.valueOf(recipeJson.get("id").toString()));
+        recipe.setFav(Boolean.valueOf(recipeJson.get("fav").toString()));
         recipe.setUrl(recipeJson.get("url").toString());
         recipe.setName(recipeJson.get("name").toString());
         recipe.setIngredients((JSONArray) recipeJson.get("ingredients"));
@@ -81,5 +82,4 @@ public class Search {
         recipe.setCategory(recipeJson.get("category").toString());
         recipe.setCountry(recipeJson.get("country").toString());
     }
-
 }

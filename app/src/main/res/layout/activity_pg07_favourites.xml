@@ -134,6 +134,7 @@
 
                     <!--  recipe title-->
                     <TextView
+                        android:id="@+id/item1_title_tv"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="0.6"
@@ -143,6 +144,7 @@
 
                     <!--  read full recipe button-->
                     <Button
+                        android:id="@+id/item1_button"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="0.4"
@@ -154,6 +156,7 @@
 
                 <!-- recipe excerpt-->
                 <TextView
+                    android:id="@+id/item1_desc_tv"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingTop="10dp"
@@ -190,6 +193,7 @@
                     <!-- recipe title-->
                     <TextView
                         android:layout_width="0dp"
+                        android:id="@+id/item2_title_tv"
                         android:layout_height="wrap_content"
                         android:layout_weight="0.6"
                         android:paddingHorizontal="5dp"
@@ -198,6 +202,7 @@
 
                     <!-- read full recipe button-->
                     <Button
+                        android:id="@+id/item2_button"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="0.4"
@@ -209,6 +214,7 @@
 
                 <!-- recipe excerpt-->
                 <TextView
+                    android:id="@+id/item2_desc_tv"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingTop="10dp"
@@ -244,6 +250,7 @@
 
                     <!-- recipe title-->
                     <TextView
+                        android:id="@+id/item3_title_tv"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="0.6"
@@ -253,6 +260,7 @@
 
                     <!-- read full recipe button-->
                     <Button
+                        android:id="@+id/item3_button"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="0.4"
@@ -263,6 +271,7 @@
 
                 <!-- recipe excerpt-->
                 <TextView
+                    android:id="@+id/item3_desc_tv"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingTop="10dp"
@@ -298,6 +307,7 @@
 
                     <!--  recipe title-->
                     <TextView
+                        android:id="@+id/item4_title_tv"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="0.6"
@@ -307,6 +317,7 @@
 
                     <!--  read full recipe button-->
                     <Button
+                        android:id="@+id/item4_button"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="0.4"
@@ -318,6 +329,7 @@
 
                 <!-- recipe excerpt-->
                 <TextView
+                    android:id="@+id/item4_desc_tv"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingTop="10dp"
