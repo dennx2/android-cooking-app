@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
             public void onTick(long l) {
             }
             public void onFinish() {
-                Intent intent = new Intent(getApplicationContext(), pg11_FoodCategoryActivity.class);
+                Intent intent = new Intent(getApplicationContext(), activity_pg06_login.class);
                 startActivity(intent);
                 finish();
             }

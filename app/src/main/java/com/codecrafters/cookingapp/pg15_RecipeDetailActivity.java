@@ -11,17 +11,19 @@ import java.util.List;
 
 public class pg15_RecipeDetailActivity extends AppCompatActivity {
 
-    // TODO fix name of the intent object
-    Recipe recipe = (Recipe) getIntent().getSerializableExtra("myObject");
-
     TextView tvTitle;
     TextView tvIngredients;
     TextView tvSteps;
+    TextView tvCategory;
+    TextView tvCountry;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pg15_recipe_detail);
+
+        // TODO fix name of the intent object
+        Recipe recipe = (Recipe) getIntent().getSerializableExtra("recipe");
 
         String url = recipe.getUrl();
         String name = recipe.getName();
@@ -32,13 +34,20 @@ public class pg15_RecipeDetailActivity extends AppCompatActivity {
         String cookTime = recipe.getCookTime();
         String totalTime = recipe.getTotalTime();
         String nbServings = recipe.getNbServings();
+        String category = recipe.getCategory();
+        String country = recipe.getCountry();
 
         tvTitle = findViewById(R.id.tv_rname);
         tvIngredients = findViewById(R.id.tv_detail_ingredient);
         tvSteps = findViewById(R.id.tv_detail_direction);
+        tvCategory = findViewById(R.id.tv_categories);
+        tvCountry = findViewById(R.id.tv_countries);
+
 
         // Set the recipe content
         tvTitle.setText(name);
+        tvCategory.setText(category);
+        tvCountry.setText(country);
 
         String ingredientsText = "";
         for (String ingredient : ingredients) {
