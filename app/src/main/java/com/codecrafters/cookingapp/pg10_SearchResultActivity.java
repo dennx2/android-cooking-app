@@ -48,17 +48,14 @@ public class pg10_SearchResultActivity extends AppCompatActivity {
 //
 //        //null value check
         if (ing1 == null && ing2 == null && ing3 == null) {
-            ing1 = " ";
-            ing2 = " ";
-            ing3 = " ";
+            ing1 = "-";
+            ing2 = "-";
+            ing3 = "-";
             searchKeywords.setText("'" + ing4 + "'");
         }else if(ing4 == null){
-            ing4 = " ";
+            ing4 = "-";
             searchKeywords.setText("'" + ing1 + "', '" + ing2 + "', '" + ing3 +"'");
         }
-
-
-
 
         // Call the search functions to get recipe data
         ArrayList<Recipe> recipes = Search.countrySearch(this);
@@ -77,6 +74,9 @@ public class pg10_SearchResultActivity extends AppCompatActivity {
         }
 
 //        Toast.makeText(this, "Recipes found: " + recipeNames, Toast.LENGTH_LONG).show();
+
+//        //to set all the items in search result activity to empty (for testing purpose)
+//        filteredRecipes.clear();
 
         //call the method to update the UI based on the filteredrecipes
         updateSearchResultPage(filteredRecipes);
@@ -98,7 +98,7 @@ public class pg10_SearchResultActivity extends AppCompatActivity {
             int imageButtonId = getResources().getIdentifier("imageButton" + i, "id", getPackageName());
 
             // Update the ImageButton object with the recipe name as its id
-            ImageButton imageButton = findViewById(imageButtonId);
+            imageButton = findViewById(imageButtonId);
 
             String newButtonId = "imageButton_" + recipeName;
             int newButtonIdResId = getResources().getIdentifier(newButtonId, "id", getPackageName());
@@ -116,7 +116,7 @@ public class pg10_SearchResultActivity extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     // Store the clicked recipe name in shared preferences;
-                    String storedRecipeIds = sharedPreferences.getString("recipeIDs", ""); // Retrieve the stored recipe ids (if it alrdy has something in it)
+                    storedRecipeIds = sharedPreferences.getString("recipeIDs", ""); // Retrieve the stored recipe ids (if it alrdy has something in it)
 
                     //if shared preference is null, just add the id to it
                     //else use helper method
