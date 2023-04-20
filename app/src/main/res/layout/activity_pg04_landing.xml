@@ -62,7 +62,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAllCaps="false"
-        android:text="Filter"
+        android:text="Search"
         android:textSize="22sp"
         android:gravity="center"
         android:backgroundTint="#FFB100"
@@ -156,7 +156,8 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toLeftOf="@+id/imageView2"
-                app:layout_constraintBottom_toTopOf="@+id/imageView3"/>
+                app:layout_constraintBottom_toTopOf="@+id/imageView3"
+                android:onClick="openRecipe"/>
 
             <ImageView
                 android:id="@+id/imageView2"
@@ -167,7 +168,8 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintLeft_toRightOf="@+id/imageView1"
-                app:layout_constraintBottom_toTopOf="@+id/imageView4"/>
+                app:layout_constraintBottom_toTopOf="@+id/imageView4"
+                android:onClick="openRecipe"/>
 
             <ImageView
                 android:id="@+id/imageView3"
@@ -178,7 +180,8 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toLeftOf="@+id/imageView4"
-                app:layout_constraintTop_toBottomOf="@+id/imageView1"/>
+                app:layout_constraintTop_toBottomOf="@+id/imageView1"
+                android:onClick="openRecipe"/>
 
             <ImageView
                 android:id="@+id/imageView4"
@@ -189,7 +192,8 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintLeft_toRightOf="@+id/imageView3"
-                app:layout_constraintTop_toBottomOf="@+id/imageView2"/>
+                app:layout_constraintTop_toBottomOf="@+id/imageView2"
+                android:onClick="openRecipe"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

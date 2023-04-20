@@ -25,7 +25,8 @@
         android:textAllCaps="false"
         app:layout_constraintTop_toBottomOf="@id/gl_h_15sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:onClick="goProfile"/>
 
     <Button
         android:id="@+id/favoritesButton"
@@ -38,7 +39,8 @@
         android:textAllCaps="false"
         app:layout_constraintTop_toBottomOf="@id/profileButton"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:onClick="goFavorites"/>
 
     <Button
         android:id="@+id/recommendationButton"
@@ -51,7 +53,8 @@
         android:textAllCaps="false"
         app:layout_constraintTop_toBottomOf="@id/favoritesButton"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:onClick="goRecommend"/>
 
     <Button
         android:id="@+id/browseAllButton"
@@ -64,7 +67,8 @@
         android:textAllCaps="false"
         app:layout_constraintTop_toBottomOf="@id/recommendationButton"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:onClick="goBrowseAll"/>
 
     <Button
         android:id="@+id/viewHistoryButton"
@@ -77,7 +81,8 @@
         android:textAllCaps="false"
         app:layout_constraintTop_toBottomOf="@id/browseAllButton"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:onClick="viewHistory"/>
 
     <Button
         android:id="@+id/aboutUsButton"
@@ -90,7 +95,8 @@
         android:textAllCaps="false"
         app:layout_constraintTop_toBottomOf="@id/viewHistoryButton"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:onClick="aboutUs"/>
 
     <Button
         android:id="@+id/logoutButton"
@@ -103,7 +109,8 @@
         android:textAllCaps="false"
         app:layout_constraintTop_toBottomOf="@id/aboutUsButton"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:onClick="logout"/>
 
     <Button
         android:id="@+id/backButton"
@@ -118,6 +125,7 @@
         android:textAllCaps="false"
         app:layout_constraintTop_toBottomOf="@id/logoutButton"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:onClick="goBack"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
