@@ -101,121 +101,123 @@
             <!--            android:rowCount="3"-->
 
             <ImageButton
-                android:id="@+id/country_japan"
+                android:id="@+id/imageButton0"
                 android:layout_width="0dp"
                 android:layout_height="120dp"
+                android:layout_row="0"
                 android:layout_rowWeight="1"
+                android:layout_column="0"
                 android:layout_columnWeight="1"
                 android:layout_margin="8dp"
                 android:background="@color/dorange"
-                android:contentDescription="image_of_dish_from_japan"
+                android:contentDescription="image_of_na"
                 android:padding="5dp"
                 android:scaleType="fitXY"
-                android:src="@drawable/dish_japan" />
+                android:src="@drawable/no_image" />
 
             <ImageButton
-                android:id="@+id/country_india"
+                android:id="@+id/imageButton1"
                 android:layout_width="0dp"
                 android:layout_height="120dp"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:layout_margin="8dp"
                 android:background="@color/dorange"
-                android:contentDescription="image_of_dish_from_india"
+                android:contentDescription="image_of_na"
                 android:padding="5dp"
                 android:scaleType="fitXY"
-                android:src="@drawable/dish_india" />
+                android:src="@drawable/no_image" />
 
             <ImageButton
-                android:id="@+id/country_taiwan"
+                android:id="@+id/imageButton2"
                 android:layout_width="0dp"
                 android:layout_height="120dp"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:layout_margin="8dp"
                 android:background="@color/dorange"
-                android:contentDescription="image_of_dish_from_taiwan"
+                android:contentDescription="image_of_na"
                 android:padding="5dp"
                 android:scaleType="fitXY"
-                android:src="@drawable/dish_taiwan" />
+                android:src="@drawable/no_image" />
 
             <ImageButton
-                android:id="@+id/country_china"
+                android:id="@+id/imageButton3"
                 android:layout_width="0dp"
                 android:layout_height="120dp"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:layout_margin="8dp"
                 android:background="@color/dorange"
-                android:contentDescription="image_of_dish_from_china"
+                android:contentDescription="image_of_na"
                 android:padding="5dp"
                 android:scaleType="fitXY"
-                android:src="@drawable/dish_china" />
+                android:src="@drawable/no_image" />
 
             <ImageButton
-                android:id="@+id/country_canada"
+                android:id="@+id/imageButton4"
                 android:layout_width="0dp"
                 android:layout_height="120dp"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:layout_margin="8dp"
                 android:background="@color/dorange"
-                android:contentDescription="image_of_dish_from_canada"
+                android:contentDescription="image_of_na"
                 android:padding="5dp"
                 android:scaleType="fitXY"
-                android:src="@drawable/dish_canada" />
+                android:src="@drawable/no_image" />
 
             <ImageButton
-                android:id="@+id/country_nepal"
+                android:id="@+id/imageButton5"
                 android:layout_width="0dp"
                 android:layout_height="120dp"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:layout_margin="8dp"
                 android:background="@color/dorange"
-                android:contentDescription="image_of_dish_from_nepal"
+                android:contentDescription="image_of_na"
                 android:padding="5dp"
                 android:scaleType="fitXY"
-                android:src="@drawable/dish_nepal" />
+                android:src="@drawable/no_image" />
 
             <ImageButton
-                android:id="@+id/categories_nonveg"
+                android:id="@+id/imageButton6"
                 android:layout_width="0dp"
                 android:layout_height="120dp"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:layout_margin="8dp"
                 android:background="@color/dorange"
-                android:contentDescription="image_of_category_nonveg"
+                android:contentDescription="image_of_na"
                 android:padding="5dp"
                 android:scaleType="fitXY"
-                android:src="@drawable/categories_nonveg" />
+                android:src="@drawable/no_image" />
 
             <ImageButton
-                android:id="@+id/categories_gluten_free"
+                android:id="@+id/imageButton7"
                 android:layout_width="0dp"
                 android:layout_height="120dp"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:layout_margin="8dp"
                 android:background="@color/dorange"
-                android:contentDescription="image_of_category_gluten_free"
+                android:contentDescription="image_of_na"
                 android:padding="5dp"
                 android:scaleType="fitXY"
-                android:src="@drawable/categories_gluten_free" />
+                android:src="@drawable/no_image" />
 
             <ImageButton
-                android:id="@+id/categories_fruit"
+                android:id="@+id/imageButton8"
                 android:layout_width="0dp"
                 android:layout_height="120dp"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:layout_margin="8dp"
                 android:background="@color/dorange"
-                android:contentDescription="image_of_category_fruit"
+                android:contentDescription="image_of_na"
                 android:padding="5dp"
                 android:scaleType="fitXY"
-                android:src="@drawable/categories_fruit" />
+                android:src="@drawable/no_image" />
 
 
         </GridLayout>
