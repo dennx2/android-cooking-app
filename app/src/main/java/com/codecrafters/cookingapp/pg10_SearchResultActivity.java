@@ -113,7 +113,7 @@ public class pg10_SearchResultActivity extends AppCompatActivity {
                     editor.apply(); // Commit the changes to shared preferences
 
                     //pass the clicked recipe object to the detail page via intent
-                    //to do - change destination to pg15_RecipeDetailActivity.class
+                    //todo - change destination to pg15_RecipeDetailActivity.class
 //                    and add the following code in its oncreatemethod()
 //                    Recipe recipe = (Recipe) getIntent().getSerializableExtra("recipe");
                     Intent intent = new Intent(pg10_SearchResultActivity.this, pg13_HistoryActivity.class);
