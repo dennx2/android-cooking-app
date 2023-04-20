@@ -96,7 +96,7 @@
                 android:contentDescription="image_of_dish_from_japan"
                 android:padding="5dp"
                 android:scaleType="fitXY"
-                android:src="@drawable/dish_japan" />
+                android:src="@drawable/japan" />
 
             <ImageButton
                 android:id="@+id/country_india"
@@ -109,7 +109,7 @@
                 android:contentDescription="image_of_dish_from_india"
                 android:padding="5dp"
                 android:scaleType="fitXY"
-                android:src="@drawable/dish_india" />
+                android:src="@drawable/india" />
 
             <ImageButton
                 android:id="@+id/country_taiwan"
@@ -122,7 +122,7 @@
                 android:contentDescription="image_of_dish_from_taiwan"
                 android:padding="5dp"
                 android:scaleType="fitXY"
-                android:src="@drawable/dish_taiwan" />
+                android:src="@drawable/taiwan" />
 
             <ImageButton
                 android:id="@+id/country_china"
@@ -135,7 +135,7 @@
                 android:contentDescription="image_of_dish_from_china"
                 android:padding="5dp"
                 android:scaleType="fitXY"
-                android:src="@drawable/dish_china" />
+                android:src="@drawable/china" />
 
             <ImageButton
                 android:id="@+id/country_canada"
@@ -148,7 +148,7 @@
                 android:contentDescription="image_of_dish_from_canada"
                 android:padding="5dp"
                 android:scaleType="fitXY"
-                android:src="@drawable/dish_canada" />
+                android:src="@drawable/canada" />
 
             <ImageButton
                 android:id="@+id/country_nepal"
@@ -161,7 +161,7 @@
                 android:contentDescription="image_of_dish_from_nepal"
                 android:padding="5dp"
                 android:scaleType="fitXY"
-                android:src="@drawable/dish_nepal" />
+                android:src="@drawable/nepal" />
 
             <ImageButton
                 android:id="@+id/country_italy"
@@ -174,7 +174,7 @@
                 android:contentDescription="image_of_dish_from_italy"
                 android:padding="5dp"
                 android:scaleType="fitXY"
-                android:src="@drawable/dish_italy" />
+                android:src="@drawable/italy" />
 
             <ImageButton
                 android:id="@+id/country_mexico"
@@ -187,7 +187,7 @@
                 android:contentDescription="image_of_dish_from_mexico"
                 android:padding="5dp"
                 android:scaleType="fitXY"
-                android:src="@drawable/dish_mexico" />
+                android:src="@drawable/mexico" />
 
             <ImageButton
                 android:id="@+id/country_greece"
@@ -200,7 +200,7 @@
                 android:contentDescription="image_of_dish_from_greece"
                 android:padding="5dp"
                 android:scaleType="fitXY"
-                android:src="@drawable/dish_greece" />
+                android:src="@drawable/greece" />
         </GridLayout>
 
     </ScrollView>
@@ -246,7 +246,7 @@
                 android:contentDescription="image_of_category_vegan"
                 android:padding="5dp"
                 android:scaleType="fitXY"
-                android:src="@drawable/categories_vegan" />
+                android:src="@drawable/vegan" />
 
             <ImageButton
                 android:id="@+id/categories_veg"
@@ -259,7 +259,7 @@
                 android:contentDescription="image_of_category_veg"
                 android:padding="5dp"
                 android:scaleType="fitXY"
-                android:src="@drawable/categories_veg" />
+                android:src="@drawable/vegetarian" />
 
             <ImageButton
                 android:id="@+id/categories_nonveg"
@@ -272,7 +272,7 @@
                 android:contentDescription="image_of_category_nonveg"
                 android:padding="5dp"
                 android:scaleType="fitXY"
-                android:src="@drawable/categories_nonveg" />
+                android:src="@drawable/meatlover" />
 
             <ImageButton
                 android:id="@+id/categories_gluten_free"
@@ -285,7 +285,7 @@
                 android:contentDescription="image_of_category_gluten_free"
                 android:padding="5dp"
                 android:scaleType="fitXY"
-                android:src="@drawable/categories_gluten_free" />
+                android:src="@drawable/glutenfree" />
 
             <ImageButton
                 android:id="@+id/categories_fruit"
@@ -298,7 +298,7 @@
                 android:contentDescription="image_of_category_fruit"
                 android:padding="5dp"
                 android:scaleType="fitXY"
-                android:src="@drawable/categories_fruit" />
+                android:src="@drawable/dessert" />
 
         </GridLayout>
 
