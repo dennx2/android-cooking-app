@@ -84,6 +84,8 @@ public class pg10_SearchResultActivity extends AppCompatActivity {
             }
         }
 
+////        to renable survey page after login
+//        sharedPreferences = getSharedPreferences("MyPrefs", MODE_PRIVATE);
 //        SharedPreferences.Editor editor = sharedPreferences.edit();
 //        editor.putBoolean("is_first_login", true);
 //        editor.apply();
