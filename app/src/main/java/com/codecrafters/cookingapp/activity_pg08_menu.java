@@ -44,6 +44,13 @@ public class activity_pg08_menu extends AppCompatActivity {
         finish();
     }
 
+
+    public void getBrowseCountry(View view) {
+        Intent intent = new Intent(getApplicationContext(),pg12_CountryCategoryActivity.class);
+        startActivity(intent);
+        finish();
+    }
+
     public void viewHistory(View view) {
         Intent intent = new Intent(getApplicationContext(),pg13_HistoryActivity.class);
         startActivity(intent);

@@ -38,7 +38,8 @@ public class pg11_FoodCategoryActivity extends AppCompatActivity {
         Intent i = new Intent(this, pg10_SearchResultActivity.class);
 
         // Send data along with the Intent to the destination
-        i.putExtra("recipes", recipeList);
+//        i.putExtra("recipes", recipeList);
+        i.putExtra("searchKeywordFromLanding", "All-Categories");
 
         // Start the activity with the explicit intent
         if (i.resolveActivity(getPackageManager()) != null) {

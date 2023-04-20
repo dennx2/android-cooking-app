@@ -60,7 +60,7 @@
         android:id="@+id/browseAllButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Browse All"
+        android:text="Browse By Category"
         android:textSize="15sp"
         android:backgroundTint="#F0ECCF"
         android:textColor="#808080"
@@ -71,6 +71,21 @@
         android:onClick="goBrowseAll"/>
 
     <Button
+        android:id="@+id/browseByCountry"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Browse By Country"
+        android:textSize="15sp"
+        android:backgroundTint="#F0ECCF"
+        android:textColor="#808080"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@id/browseAllButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:onClick="getBrowseCountry"/>
+
+
+    <Button
         android:id="@+id/viewHistoryButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -79,7 +94,7 @@
         android:backgroundTint="#F0ECCF"
         android:textColor="#808080"
         android:textAllCaps="false"
-        app:layout_constraintTop_toBottomOf="@id/browseAllButton"
+        app:layout_constraintTop_toBottomOf="@id/browseByCountry"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:onClick="viewHistory"/>
