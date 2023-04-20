@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "444362318940",
+    "project_id": "dishcovery-cooking-app",
+    "storage_bucket": "dishcovery-cooking-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:444362318940:android:92b96b9aa3e45c903d7299",
+        "android_client_info": {
+          "package_name": "com.codecrafters.cookingapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "444362318940-fdog9e9tgdj4hlfjdnoo86h6io9fihit.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxYddHutYPpCRo5kFNdsHUszsazbSG5X8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "444362318940-fdog9e9tgdj4hlfjdnoo86h6io9fihit.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

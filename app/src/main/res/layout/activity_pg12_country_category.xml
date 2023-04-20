@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="12dp"
-    tools:context=".MainActivity">
+    tools:context=".pg12_CountryCategoryActivity">
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/gl_h_15sp"
@@ -39,7 +39,7 @@
         >
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/pg9_outer"
+            android:id="@+id/pg12_outer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintStart_toStartOf="parent"
@@ -47,343 +47,343 @@
             >
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/pg9_inner1"
+                android:id="@+id/pg12_inner1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@id/pg9_outer"
-                app:layout_constraintEnd_toStartOf="@id/pg9_inner2"
+                app:layout_constraintTop_toTopOf="@id/pg12_outer"
+                app:layout_constraintEnd_toStartOf="@id/pg12_inner2"
                 android:layout_marginVertical="16dp"
                 >
 
                 <ImageView
-                    android:id="@+id/pg9_iv1"
+                    android:id="@+id/pg12_iv1"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:src="@drawable/dish_nepal"
                     android:foreground="#88000000"
                     android:clickable="true"
-                    android:onClick="Recipe1"
-                    app:layout_constraintStart_toStartOf="@id/pg9_inner1"
-                    app:layout_constraintTop_toTopOf="@id/pg9_inner1"
+                    app:layout_constraintStart_toStartOf="@id/pg12_inner1"
+                    app:layout_constraintTop_toTopOf="@id/pg12_inner1"
 
                     />
 
                 <TextView
-                    android:id="@+id/pg9_tv1"
+                    android:id="@+id/pg12_tv1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Nepal"
+                    android:onClick="countryNameClicked"
                     android:textStyle="bold"
                     android:textColor="@color/white"
-                    app:layout_constraintTop_toTopOf="@id/pg9_inner1"
-                    app:layout_constraintStart_toStartOf="@id/pg9_inner1"
-                    app:layout_constraintBottom_toBottomOf="@id/pg9_inner1"
-                    app:layout_constraintEnd_toEndOf="@id/pg9_inner1"
+                    app:layout_constraintTop_toTopOf="@id/pg12_inner1"
+                    app:layout_constraintStart_toStartOf="@id/pg12_inner1"
+                    app:layout_constraintBottom_toBottomOf="@id/pg12_inner1"
+                    app:layout_constraintEnd_toEndOf="@id/pg12_inner1"
                     />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/pg9_inner2"
+                android:id="@+id/pg12_inner2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_constraintStart_toEndOf="@id/pg9_inner1"
-                app:layout_constraintTop_toTopOf="@id/pg9_outer"
-                app:layout_constraintEnd_toStartOf="@id/pg9_inner3"
+                app:layout_constraintStart_toEndOf="@id/pg12_inner1"
+                app:layout_constraintTop_toTopOf="@id/pg12_outer"
+                app:layout_constraintEnd_toStartOf="@id/pg12_inner3"
                 android:layout_marginVertical="16dp"
                 >
 
                 <ImageView
-                    android:id="@+id/pg9_iv2"
+                    android:id="@+id/pg12_iv2"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:src="@drawable/dish_japan"
                     android:foreground="#88000000"
                     android:clickable="true"
-                    android:onClick="Recipe1"
-                    app:layout_constraintStart_toStartOf="@id/pg9_inner2"
-                    app:layout_constraintTop_toTopOf="@id/pg9_inner2"
+                    app:layout_constraintStart_toStartOf="@id/pg12_inner2"
+                    app:layout_constraintTop_toTopOf="@id/pg12_inner2"
 
                     />
 
                 <TextView
-                    android:id="@+id/pg9_tv2"
+                    android:id="@+id/pg12_tv2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Japan"
+                    android:onClick="countryNameClicked"
                     android:textStyle="bold"
                     android:textColor="@color/white"
-                    app:layout_constraintTop_toTopOf="@id/pg9_inner2"
-                    app:layout_constraintStart_toStartOf="@id/pg9_inner2"
-                    app:layout_constraintBottom_toBottomOf="@id/pg9_inner2"
-                    app:layout_constraintEnd_toEndOf="@id/pg9_inner2"
+                    app:layout_constraintTop_toTopOf="@id/pg12_inner2"
+                    app:layout_constraintStart_toStartOf="@id/pg12_inner2"
+                    app:layout_constraintBottom_toBottomOf="@id/pg12_inner2"
+                    app:layout_constraintEnd_toEndOf="@id/pg12_inner2"
                     />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/pg9_inner3"
+                android:id="@+id/pg12_inner3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_constraintStart_toEndOf="@id/pg9_inner2"
-                app:layout_constraintTop_toTopOf="@id/pg9_outer"
-                app:layout_constraintEnd_toEndOf="@id/pg9_outer"
+                app:layout_constraintStart_toEndOf="@id/pg12_inner2"
+                app:layout_constraintTop_toTopOf="@id/pg12_outer"
+                app:layout_constraintEnd_toEndOf="@id/pg12_outer"
                 android:layout_marginVertical="16dp"
                 >
 
                 <ImageView
-                    android:id="@+id/pg9_iv3"
+                    android:id="@+id/pg12_iv3"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:src="@drawable/dish_greece"
                     android:foreground="#88000000"
                     android:clickable="true"
-                    android:onClick="Recipe1"
-                    app:layout_constraintStart_toStartOf="@id/pg9_inner3"
-                    app:layout_constraintTop_toTopOf="@id/pg9_inner3"
+                    app:layout_constraintStart_toStartOf="@id/pg12_inner3"
+                    app:layout_constraintTop_toTopOf="@id/pg12_inner3"
 
                     />
 
                 <TextView
-                    android:id="@+id/pg9_tv3"
+                    android:id="@+id/pg12_tv3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Greece"
+                    android:onClick="countryNameClicked"
                     android:textStyle="bold"
                     android:textColor="@color/white"
-                    app:layout_constraintTop_toTopOf="@id/pg9_inner3"
-                    app:layout_constraintStart_toStartOf="@id/pg9_inner3"
-                    app:layout_constraintBottom_toBottomOf="@id/pg9_inner3"
-                    app:layout_constraintEnd_toEndOf="@id/pg9_inner3"
+                    app:layout_constraintTop_toTopOf="@id/pg12_inner3"
+                    app:layout_constraintStart_toStartOf="@id/pg12_inner3"
+                    app:layout_constraintBottom_toBottomOf="@id/pg12_inner3"
+                    app:layout_constraintEnd_toEndOf="@id/pg12_inner3"
                     />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/pg9_inner4"
+                android:id="@+id/pg12_inner4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_constraintStart_toStartOf="@id/pg9_outer"
-                app:layout_constraintTop_toBottomOf="@id/pg9_inner1"
-                app:layout_constraintEnd_toStartOf="@id/pg9_inner5"
+                app:layout_constraintStart_toStartOf="@id/pg12_outer"
+                app:layout_constraintTop_toBottomOf="@id/pg12_inner1"
+                app:layout_constraintEnd_toStartOf="@id/pg12_inner5"
                 android:layout_marginVertical="16dp"
                 >
 
                 <ImageView
-                    android:id="@+id/pg9_iv4"
+                    android:id="@+id/pg12_iv4"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:src="@drawable/dish_india"
                     android:foreground="#88000000"
                     android:clickable="true"
-                    android:onClick="Recipe1"
-                    app:layout_constraintStart_toStartOf="@id/pg9_inner4"
-                    app:layout_constraintTop_toTopOf="@id/pg9_inner4"
+                    app:layout_constraintStart_toStartOf="@id/pg12_inner4"
+                    app:layout_constraintTop_toTopOf="@id/pg12_inner4"
 
                     />
 
                 <TextView
-                    android:id="@+id/pg9_tv4"
+                    android:id="@+id/pg12_tv4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="India"
+                    android:onClick="countryNameClicked"
                     android:textStyle="bold"
                     android:textColor="@color/white"
-                    app:layout_constraintTop_toTopOf="@id/pg9_inner4"
-                    app:layout_constraintStart_toStartOf="@id/pg9_inner4"
-                    app:layout_constraintBottom_toBottomOf="@id/pg9_inner4"
-                    app:layout_constraintEnd_toEndOf="@id/pg9_inner4"
+                    app:layout_constraintTop_toTopOf="@id/pg12_inner4"
+                    app:layout_constraintStart_toStartOf="@id/pg12_inner4"
+                    app:layout_constraintBottom_toBottomOf="@id/pg12_inner4"
+                    app:layout_constraintEnd_toEndOf="@id/pg12_inner4"
                     />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/pg9_inner5"
+                android:id="@+id/pg12_inner5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_constraintStart_toEndOf="@id/pg9_inner4"
-                app:layout_constraintTop_toBottomOf="@id/pg9_inner2"
-                app:layout_constraintEnd_toStartOf="@id/pg9_inner6"
+                app:layout_constraintStart_toEndOf="@id/pg12_inner4"
+                app:layout_constraintTop_toBottomOf="@id/pg12_inner2"
+                app:layout_constraintEnd_toStartOf="@id/pg12_inner6"
                 android:layout_marginVertical="16dp"
                 >
 
                 <ImageView
-                    android:id="@+id/pg9_iv5"
+                    android:id="@+id/pg12_iv5"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:src="@drawable/dish_china"
                     android:foreground="#88000000"
                     android:clickable="true"
-                    android:onClick="Recipe1"
-                    app:layout_constraintStart_toStartOf="@id/pg9_inner5"
-                    app:layout_constraintTop_toTopOf="@id/pg9_inner5"
+                    app:layout_constraintStart_toStartOf="@id/pg12_inner5"
+                    app:layout_constraintTop_toTopOf="@id/pg12_inner5"
 
                     />
 
                 <TextView
-                    android:id="@+id/pg9_tv5"
+                    android:id="@+id/pg12_tv5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="China"
+                    android:onClick="countryNameClicked"
                     android:textStyle="bold"
                     android:textColor="@color/white"
-                    app:layout_constraintTop_toTopOf="@id/pg9_inner5"
-                    app:layout_constraintStart_toStartOf="@id/pg9_inner5"
-                    app:layout_constraintBottom_toBottomOf="@id/pg9_inner5"
-                    app:layout_constraintEnd_toEndOf="@id/pg9_inner5"
+                    app:layout_constraintTop_toTopOf="@id/pg12_inner5"
+                    app:layout_constraintStart_toStartOf="@id/pg12_inner5"
+                    app:layout_constraintBottom_toBottomOf="@id/pg12_inner5"
+                    app:layout_constraintEnd_toEndOf="@id/pg12_inner5"
                     />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/pg9_inner6"
+                android:id="@+id/pg12_inner6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_constraintStart_toEndOf="@id/pg9_inner5"
-                app:layout_constraintTop_toBottomOf="@id/pg9_inner3"
-                app:layout_constraintEnd_toEndOf="@id/pg9_outer"
+                app:layout_constraintStart_toEndOf="@id/pg12_inner5"
+                app:layout_constraintTop_toBottomOf="@id/pg12_inner3"
+                app:layout_constraintEnd_toEndOf="@id/pg12_outer"
                 android:layout_marginVertical="16dp"
                 >
 
                 <ImageView
-                    android:id="@+id/pg9_iv6"
+                    android:id="@+id/pg12_iv6"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:src="@drawable/dish_taiwan"
                     android:foreground="#88000000"
                     android:clickable="true"
-                    android:onClick="Recipe1"
-                    app:layout_constraintStart_toStartOf="@id/pg9_inner6"
-                    app:layout_constraintTop_toTopOf="@id/pg9_inner6"
+                    app:layout_constraintStart_toStartOf="@id/pg12_inner6"
+                    app:layout_constraintTop_toTopOf="@id/pg12_inner6"
 
                     />
 
                 <TextView
-                    android:id="@+id/pg9_tv6"
+                    android:id="@+id/pg12_tv6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Taiwan"
+                    android:onClick="countryNameClicked"
                     android:textStyle="bold"
                     android:textColor="@color/white"
-                    app:layout_constraintTop_toTopOf="@id/pg9_inner6"
-                    app:layout_constraintStart_toStartOf="@id/pg9_inner6"
-                    app:layout_constraintBottom_toBottomOf="@id/pg9_inner6"
-                    app:layout_constraintEnd_toEndOf="@id/pg9_inner6"
+                    app:layout_constraintTop_toTopOf="@id/pg12_inner6"
+                    app:layout_constraintStart_toStartOf="@id/pg12_inner6"
+                    app:layout_constraintBottom_toBottomOf="@id/pg12_inner6"
+                    app:layout_constraintEnd_toEndOf="@id/pg12_inner6"
                     />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/pg9_inner7"
+                android:id="@+id/pg12_inner7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_constraintStart_toStartOf="@id/pg9_outer"
-                app:layout_constraintTop_toBottomOf="@id/pg9_inner4"
-                app:layout_constraintEnd_toStartOf="@id/pg9_inner8"
+                app:layout_constraintStart_toStartOf="@id/pg12_outer"
+                app:layout_constraintTop_toBottomOf="@id/pg12_inner4"
+                app:layout_constraintEnd_toStartOf="@id/pg12_inner8"
                 android:layout_marginVertical="16dp"
                 >
 
                 <ImageView
-                    android:id="@+id/pg9_iv7"
+                    android:id="@+id/pg12_iv7"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:src="@drawable/dish_italy"
                     android:foreground="#88000000"
                     android:clickable="true"
-                    android:onClick="Recipe1"
-                    app:layout_constraintStart_toStartOf="@id/pg9_inner7"
-                    app:layout_constraintTop_toTopOf="@id/pg9_inner7"
+                    app:layout_constraintStart_toStartOf="@id/pg12_inner7"
+                    app:layout_constraintTop_toTopOf="@id/pg12_inner7"
 
                     />
 
                 <TextView
-                    android:id="@+id/pg9_tv7"
+                    android:id="@+id/pg12_tv7"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Italy"
+                    android:onClick="countryNameClicked"
                     android:textStyle="bold"
                     android:textColor="@color/white"
-                    app:layout_constraintTop_toTopOf="@id/pg9_inner7"
-                    app:layout_constraintStart_toStartOf="@id/pg9_inner7"
-                    app:layout_constraintBottom_toBottomOf="@id/pg9_inner7"
-                    app:layout_constraintEnd_toEndOf="@id/pg9_inner7"
+                    app:layout_constraintTop_toTopOf="@id/pg12_inner7"
+                    app:layout_constraintStart_toStartOf="@id/pg12_inner7"
+                    app:layout_constraintBottom_toBottomOf="@id/pg12_inner7"
+                    app:layout_constraintEnd_toEndOf="@id/pg12_inner7"
                     />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/pg9_inner8"
+                android:id="@+id/pg12_inner8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_constraintStart_toEndOf="@id/pg9_inner7"
-                app:layout_constraintTop_toBottomOf="@id/pg9_inner5"
-                app:layout_constraintEnd_toStartOf="@id/pg9_inner9"
+                app:layout_constraintStart_toEndOf="@id/pg12_inner7"
+                app:layout_constraintTop_toBottomOf="@id/pg12_inner5"
+                app:layout_constraintEnd_toStartOf="@id/pg12_inner9"
                 android:layout_marginVertical="16dp"
                 >
 
                 <ImageView
-                    android:id="@+id/pg9_iv8"
+                    android:id="@+id/pg12_iv8"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:src="@drawable/dish_mexico"
                     android:foreground="#88000000"
                     android:clickable="true"
-                    android:onClick="Recipe1"
-                    app:layout_constraintStart_toStartOf="@id/pg9_inner8"
-                    app:layout_constraintTop_toTopOf="@id/pg9_inner8"
+                    app:layout_constraintStart_toStartOf="@id/pg12_inner8"
+                    app:layout_constraintTop_toTopOf="@id/pg12_inner8"
 
                     />
 
                 <TextView
-                    android:id="@+id/pg9_tv8"
+                    android:id="@+id/pg12_tv8"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Mexico"
+                    android:onClick="countryNameClicked"
                     android:textStyle="bold"
                     android:textColor="@color/white"
-                    app:layout_constraintTop_toTopOf="@id/pg9_inner8"
-                    app:layout_constraintStart_toStartOf="@id/pg9_inner8"
-                    app:layout_constraintBottom_toBottomOf="@id/pg9_inner8"
-                    app:layout_constraintEnd_toEndOf="@id/pg9_inner8"
+                    app:layout_constraintTop_toTopOf="@id/pg12_inner8"
+                    app:layout_constraintStart_toStartOf="@id/pg12_inner8"
+                    app:layout_constraintBottom_toBottomOf="@id/pg12_inner8"
+                    app:layout_constraintEnd_toEndOf="@id/pg12_inner8"
                     />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/pg9_inner9"
+                android:id="@+id/pg12_inner9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_constraintStart_toEndOf="@id/pg9_inner8"
-                app:layout_constraintTop_toBottomOf="@id/pg9_inner6"
-                app:layout_constraintEnd_toEndOf="@id/pg9_outer"
+                app:layout_constraintStart_toEndOf="@id/pg12_inner8"
+                app:layout_constraintTop_toBottomOf="@id/pg12_inner6"
+                app:layout_constraintEnd_toEndOf="@id/pg12_outer"
                 android:layout_marginVertical="16dp"
                 >
 
                 <ImageView
-                    android:id="@+id/pg9_iv9"
+                    android:id="@+id/pg12_iv9"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:src="@drawable/dish_canada"
                     android:foreground="#88000000"
                     android:clickable="true"
-                    android:onClick="Recipe1"
-                    app:layout_constraintStart_toStartOf="@id/pg9_inner9"
-                    app:layout_constraintTop_toTopOf="@id/pg9_inner9"
+                    app:layout_constraintStart_toStartOf="@id/pg12_inner9"
+                    app:layout_constraintTop_toTopOf="@id/pg12_inner9"
 
                     />
 
                 <TextView
-                    android:id="@+id/pg9_tv9"
+                    android:id="@+id/pg12_tv9"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Canada"
+                    android:onClick="countryNameClicked"
                     android:textStyle="bold"
                     android:textColor="@color/white"
-                    app:layout_constraintTop_toTopOf="@id/pg9_inner9"
-                    app:layout_constraintStart_toStartOf="@id/pg9_inner9"
-                    app:layout_constraintBottom_toBottomOf="@id/pg9_inner9"
-                    app:layout_constraintEnd_toEndOf="@id/pg9_inner9"
+                    app:layout_constraintTop_toTopOf="@id/pg12_inner9"
+                    app:layout_constraintStart_toStartOf="@id/pg12_inner9"
+                    app:layout_constraintBottom_toBottomOf="@id/pg12_inner9"
+                    app:layout_constraintEnd_toEndOf="@id/pg12_inner9"
                     />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
