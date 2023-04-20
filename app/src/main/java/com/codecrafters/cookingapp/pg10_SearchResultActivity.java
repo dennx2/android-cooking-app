@@ -18,10 +18,7 @@ import java.util.List;
 import java.util.Locale;
 
 public class pg10_SearchResultActivity extends AppCompatActivity {
-    //todo- get this from intent from Jaydenn's recommendation page
-    String ing1 = "pork";
-    String ing2 = "curry";
-    String ing3 = "vindaloo";
+
     TextView searchKeywords;
     ArrayList<Recipe> filteredRecipes = new ArrayList<>();
     ImageButton imageButton;
@@ -34,7 +31,31 @@ public class pg10_SearchResultActivity extends AppCompatActivity {
         setContentView(R.layout.activity_pg10_search_result);
 
         searchKeywords = findViewById(R.id.s1_search_keywords);
-        searchKeywords.setText("'" + ing1 + "', '" + ing2 + "', '" + ing3 + "'");
+
+        Intent intent = getIntent();
+//    Recipe recipe = (Recipe) getIntent().getSerializableExtra("recipe");
+
+        //coming from  recommendation page - ing1,ing2 and ing3
+        String ing1 = intent.getStringExtra("ingredient1");
+        String ing2 = intent.getStringExtra("ingredient2");
+        String ing3 = intent.getStringExtra("ingredient3");
+
+        //coming from landing page - ing4
+        String ing4 = intent.getStringExtra("searchKeywordFromLanding");
+//
+//        //null value check
+        if (ing1 == null && ing2 == null && ing3 == null) {
+            ing1 = " ";
+            ing2 = " ";
+            ing3 = " ";
+            searchKeywords.setText("'" + ing4 + "'");
+        }else if(ing4 == null){
+            ing4 = " ";
+            searchKeywords.setText("'" + ing1 + "', '" + ing2 + "', '" + ing3 +"'");
+        }
+
+
+
 
         // Call the search functions to get recipe data
         ArrayList<Recipe> recipes = Search.countrySearch(this);
@@ -46,7 +67,7 @@ public class pg10_SearchResultActivity extends AppCompatActivity {
         for (Recipe recipe : recipes) {
             String recipeName = recipe.getName().toLowerCase();
             if (recipeName.contains(ing1.toLowerCase()) || recipeName.contains(ing2.toLowerCase())
-                    || recipeName.contains(ing3.toLowerCase())) {
+                    || recipeName.contains(ing3.toLowerCase())|| recipeName.contains(ing4.toLowerCase())) {
                 filteredRecipes.add(recipe);
                 recipeNames.append(recipeName + ", ");
             }
@@ -113,10 +134,7 @@ public class pg10_SearchResultActivity extends AppCompatActivity {
                     editor.apply(); // Commit the changes to shared preferences
 
                     //pass the clicked recipe object to the detail page via intent
-                    //todo - change destination to pg15_RecipeDetailActivity.class
-//                    and add the following code in its oncreatemethod()
-//                    Recipe recipe = (Recipe) getIntent().getSerializableExtra("recipe");
-                    Intent intent = new Intent(pg10_SearchResultActivity.this, pg13_HistoryActivity.class);
+                    Intent intent = new Intent(pg10_SearchResultActivity.this, pg15_RecipeDetailActivity.class);
                     intent.putExtra("recipe", recipe);
 //                    Toast.makeText(pg10_SearchResultActivity.this, "Recipe selected: " + recipeName, Toast.LENGTH_LONG).show();
                     startActivity(intent);

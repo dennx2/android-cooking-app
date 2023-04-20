@@ -26,7 +26,13 @@ public class pg13_HistoryActivity extends AppCompatActivity {
         String storedRecipeIds = sharedPreferences.getString("recipeIDs", "");
         Toast.makeText(this, "Recipe history: " + storedRecipeIds, Toast.LENGTH_LONG).show();
 
-
+        //this is just a trick
+        //cuz you have to go from the searchresult page to history for the shared preference to hold any value
+        //but if you directly come to history from the side menu (without visiting search result),
+        //then it will throw null exception, hence i populate storedREcipeIds with random recipeid
+        if(storedRecipeIds==null){
+            storedRecipeIds = "1,2,3,4,5";
+        }
 
         // Call the search function to get recipe data
         Context context = getApplicationContext();;
