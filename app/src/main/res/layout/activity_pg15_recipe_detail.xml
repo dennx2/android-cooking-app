@@ -43,23 +43,16 @@
 
                 <TextView
                     android:id="@+id/tv_rname"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:text="Simple Seasoned Grilled Fish"
                     android:textSize="18sp"
                     app:layout_constraintStart_toStartOf="@id/cl_inner1"
                     app:layout_constraintTop_toTopOf="@id/cl_inner1"
+
                     app:layout_constraintBottom_toBottomOf="@id/cl_inner1"
                     />
 
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Share"
-                    app:layout_constraintEnd_toEndOf="@id/cl_inner1"
-                    app:layout_constraintTop_toTopOf="@id/cl_inner1"
-                    app:layout_constraintBottom_toBottomOf="@id/cl_inner1"
-                    />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
