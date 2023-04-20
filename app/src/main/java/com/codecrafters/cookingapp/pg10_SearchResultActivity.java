@@ -33,11 +33,9 @@ public class pg10_SearchResultActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pg10_search_result);
 
-        searchKeywords = findViewById(R.id.s1_search_keywords);
-
         Intent intent = getIntent();
 //    Recipe recipe = (Recipe) getIntent().getSerializableExtra("recipe");
-
+        searchKeywords = findViewById(R.id.s1_search_keywords);
         //coming from  recommendation page - ing1,ing2 and ing3
         String ing1 = intent.getStringExtra("ingredient1");
         String ing2 = intent.getStringExtra("ingredient2");
@@ -47,16 +45,29 @@ public class pg10_SearchResultActivity extends AppCompatActivity {
         String ing4 = intent.getStringExtra("searchKeywordFromLanding");
 //
 //        //null value check
-        if (ing1 == null && ing2 == null && ing3 == null) {
-            ing1 = "-";
-            ing2 = "-";
-            ing3 = "-";
-            searchKeywords.setText("'" + ing4 + "'");
-        }else if(ing4 == null){
-            ing4 = "-";
-            searchKeywords.setText("'" + ing1 + "', '" + ing2 + "', '" + ing3 +"'");
+        if (ing1 == null || ing1.isEmpty()) {
+            ing1 = "na";
         }
-
+        if (ing2 == null || ing2.isEmpty()) {
+            ing2 = "na";
+        }
+        if (ing3 == null || ing3.isEmpty()) {
+            ing3 = "na";
+        }
+        if (ing4 == null || ing4.isEmpty()) {
+            ing4 = "na";
+        }
+//        if (ing1 == null && ing2 == null && ing3 == null && ing4==null) {
+//            ing1 = "-";
+//            ing2 = "-";
+//            ing3 = "-";
+//            ing4 = "-";
+//            searchKeywords.setText("'" + ing4 + "'");
+//        }else if(ing4 == null){
+//            ing4 = "-";
+//            searchKeywords.setText("'" + ing1 + "', '" + ing2 + "', '" + ing3 +"'");
+//        }
+        searchKeywords.setText("'" + ing1 + "', '" + ing2 + "', '" + ing3 +"', '"+ ing4 +"'");
         // Call the search functions to get recipe data
         ArrayList<Recipe> recipes = Search.countrySearch(this);
 //        int recipeCount = recipes.size();
@@ -72,6 +83,11 @@ public class pg10_SearchResultActivity extends AppCompatActivity {
                 recipeNames.append(recipeName + ", ");
             }
         }
+
+//        SharedPreferences.Editor editor = sharedPreferences.edit();
+//        editor.putBoolean("is_first_login", true);
+//        editor.apply();
+
 
 //        Toast.makeText(this, "Recipes found: " + recipeNames, Toast.LENGTH_LONG).show();
 
