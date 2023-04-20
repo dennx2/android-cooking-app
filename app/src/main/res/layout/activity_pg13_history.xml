@@ -126,7 +126,7 @@
 
             <!--            recipe details-->
             <LinearLayout
-                android:id="@+id/item1_description"
+                android:id="@+id/item1_content"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_rowWeight="1"
@@ -141,6 +141,7 @@
 
                     <!--                    recipe title-->
                     <TextView
+                        android:id="@+id/item1_title_tv"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="0.6"
@@ -150,6 +151,7 @@
 
                     <!--                    read full recipe button-->
                     <Button
+                        android:id="@+id/item1_button"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="0.4"
@@ -161,6 +163,7 @@
 
                 <!--                recipe excerpt-->
                 <TextView
+                    android:id="@+id/item1_desc_tv"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingTop="10dp"
@@ -181,7 +184,7 @@
                 android:src="@drawable/dish_taiwan" />
 
             <LinearLayout
-                android:id="@+id/item2_description"
+                android:id="@+id/item2_content"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_rowWeight="1"
@@ -196,6 +199,7 @@
 
                     <!--                    recipe title-->
                     <TextView
+                        android:id="@+id/item2_title_tv"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="0.6"
@@ -205,6 +209,7 @@
 
                     <!--                    read full recipe button-->
                     <Button
+                        android:id="@+id/item2_button"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="0.4"
@@ -216,6 +221,7 @@
 
                 <!--                recipe excerpt-->
                 <TextView
+                    android:id="@+id/item2_desc_tv"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingTop="10dp"
@@ -236,7 +242,7 @@
                 android:src="@drawable/dish_canada" />
 
             <LinearLayout
-                android:id="@+id/item3_description"
+                android:id="@+id/item3_content"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_rowWeight="1"
@@ -251,6 +257,7 @@
 
                     <!--                    recipe title-->
                     <TextView
+                        android:id="@+id/item3_title_tv"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="0.6"
@@ -260,6 +267,7 @@
 
                     <!--                    read full recipe button-->
                     <Button
+                        android:id="@+id/item3_button"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="0.4"
@@ -270,6 +278,7 @@
 
                 <!--                recipe excerpt-->
                 <TextView
+                    android:id="@+id/item3_desc_tv"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingTop="10dp"
@@ -290,7 +299,7 @@
                 android:src="@drawable/categories_nonveg" />
 
             <LinearLayout
-                android:id="@+id/item4_description"
+                android:id="@+id/item4_content"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_rowWeight="1"
@@ -305,6 +314,7 @@
 
                     <!--                    recipe title-->
                     <TextView
+                        android:id="@+id/item4_title_tv"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="0.6"
@@ -314,6 +324,7 @@
 
                     <!--                    read full recipe button-->
                     <Button
+                        android:id="@+id/item4_button"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="0.4"
@@ -325,6 +336,65 @@
 
                 <!--                recipe excerpt-->
                 <TextView
+                    android:id="@+id/item4_desc_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:text="This is a dummy excerpt of a recipe. It contains a couple of dots at the end like this ....." />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/item5_image"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:background="@color/dorange"
+                android:contentDescription="image_of_item4"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/categories_nonveg" />
+
+            <LinearLayout
+                android:id="@+id/item5_content"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="2"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!--                    recipe title-->
+                    <TextView
+                        android:id="@+id/item5_title_tv"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:paddingHorizontal="5dp"
+                        android:text="Momo"
+                        android:textStyle="bold" />
+
+                    <!--                    read full recipe button-->
+                    <Button
+                        android:id="@+id/item5_button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:backgroundTint="@color/dgreen"
+                        android:text="View Recipe"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <!--                recipe excerpt-->
+                <TextView
+                    android:id="@+id/item5_desc_tv"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingTop="10dp"

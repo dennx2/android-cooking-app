@@ -11,9 +11,6 @@ import java.util.List;
 
 public class pg15_RecipeDetailActivity extends AppCompatActivity {
 
-    // TODO fix name of the intent object
-    Recipe recipe = (Recipe) getIntent().getSerializableExtra("myObject");
-
     TextView tvTitle;
     TextView tvIngredients;
     TextView tvSteps;
@@ -24,6 +21,9 @@ public class pg15_RecipeDetailActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pg15_recipe_detail);
+
+        // TODO fix name of the intent object
+        Recipe recipe = (Recipe) getIntent().getSerializableExtra("recipe");
 
         String url = recipe.getUrl();
         String name = recipe.getName();
