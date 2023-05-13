@@ -2,16 +2,18 @@
 This is a group project which can recommend recipes based on available ingredients.
 
 Features:
-[x]Recipe for beginners
-[x]Search recipe by countries and categories
-[x]Recommendation based on search
-[x]User Profile (Sign up, login, update profile)
+
+- Recipe for beginners
+- Search recipe by countries and categories
+- Recommendation based on search
+- User Profile (Sign up, login, update profile)
 
 Stack:
-[x]XML/ JAVA (intents, shared preferences)
-[x]IDE – Android Studio
-[x]Database – Firebase
-[x]JSON file to fetch recipe data
+
+- XML/ JAVA (intents, shared preferences)
+- IDE – Android Studio
+- Database – Firebase
+- JSON file to fetch recipe data
 
 
 
